@@ -1,0 +1,4 @@
+Forprosjektrapport:
+http://student.cs.hioa.no/~s198761/prosjekt/forprosjekt.html
+kravspesifikasjon:
+http://student.cs.hioa.no/~s198761/prosjekt/kravspec.html
