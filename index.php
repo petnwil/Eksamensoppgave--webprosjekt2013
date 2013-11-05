@@ -24,26 +24,26 @@ $page = $_GET['page'];
 			<div class="nav">Underside</div>
 		</nav>
 
-		<?php
-		switch($page){
+<?php
+switch($page){
 			
-		case "":
-			include('underside1.html';
-		break;
+case "":
+	include('underside1.html';
+break;
 		
-		case "":
-			include('underside2.html';
-		break;
+case "":
+	include('underside2.html';
+break;
 		
-		case "":
-			include('underside3.html');
-		break;
+case "":
+	include('underside3.html');
+break;
 		
-		default: include('hjem.html');
-		break;
-		}
+default: include('hjem.html');
+break;
+}
 	
-		?>
+?>
 
 		<footer>
 			<p>Laget av gruppe 41</p>
