@@ -2,7 +2,7 @@
 Det som skal vises/skjules må ligge i en article tagg.*/
 
 $(document).ready(function(){
-	//$("button").css("display", "inline");
+	$("button").css("display", "inline");
 	$(".mindre").toggle();
 	$("article").toggle();
 
