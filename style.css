@@ -1,0 +1,129 @@
+/*HEADER*/
+#header img{
+	width:900px;
+	height: 250px;
+	padding-right:50px;
+	padding-left:50px;
+	padding-top: 0;
+	padding-bottom:0;
+}
+
+body{
+	background-color:navy;
+	padding-left:50px;
+	padding-right:50px;
+}
+
+/*INNMATEN*/
+#innholdet{
+	border: 1px solid blue;
+	border-radius:3px;
+	text-align:center;
+	padding: 50px;
+	background-color: white;
+	margin-left: auto;
+	margin-right:auto;
+}
+
+
+
+
+/*MENYEN*/
+
+#meny,
+#meny ul,
+#meny li,
+#meny ul, li, a{
+	margin:0;
+	padding:0;
+	border: none;
+	outline: none;
+}
+
+#meny{
+	height: 40px;
+	width:380px; /*bredden på hele linjen*/
+	background: blue;
+	border: 1px solid;
+	border-radius:3px;
+	position:relative; /*kanskje ikke noen funksjon, må teste ut*/
+}
+
+#meny li{
+	position:relative;
+	list-style: none;
+	float: left; /* legge menyen horisontalt*/
+	display: block;
+	height:40px;
+}
+
+
+#meny li a{				/* Hovedlinjen*/
+	display: block;
+	padding: 0 15px;
+	margin: 6px 0;
+	line-height: 30px;
+	text-decoration: none;
+
+	/*border-left: 1px solid;
+	border-right: 1px solid;
+	border-color: black;*/
+
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 10px;
+
+	color: white;
+	text-shadow:;
+}
+
+#meny li:first-child a{
+	border-left: none;
+}
+
+#meny li:last-child a{
+	border-right: none;
+}
+
+#meny li:hover > a{
+	color: navy;
+}
+
+#meny ul{
+	position:absolute;
+	top: 40px;      /*avstand mellom hoved-ord og ord i sub-meny*/
+	
+
+	opacity: 0;
+	background: blue;
+}
+
+#meny li:hover ul{
+	opacity: 1;
+}
+
+#meny ul li{
+	height: 0;
+	overflow: hidden;
+	padding: 0;
+}
+
+#meny li:hover > ul li{
+	height: 40px;
+	overflow: visible;
+	padding: 0;
+}
+
+#meny ul li a{
+	width: 50px;
+	padding: 4px 0 4px 40px;
+	margin:0;
+	border: none;
+	border-bottom: 1px solid;
+}
+
+#meny ul li:last-child a{
+	border: none;
+}
+
+
