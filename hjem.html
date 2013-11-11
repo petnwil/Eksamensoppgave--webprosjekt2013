@@ -9,56 +9,90 @@
 	<script>
 	function rulle()
 	{
-		$('#rulleliste p:first').slideUp( function() { $(this).appendTo($('#rulleliste')).slideDown(); });
+		$('#rullevindu p:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
 	}
 	setInterval(function(){ rulle()}, 5000);
 
 	</script>
 
 	<style>
-	#rulleliste {
-		height:400px;
-		width: 400px;
-		overflow: hidden;
-	}
-	
-	#rulleliste p{
-		height: 400px;
-		width: 400px;
+
+	#top{
+		border: 2px solid;
+		border-color: blue;
+		height:500px;
+		width: 950px;
+		padding:10px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:auto;
+		margin-bottom:auto;
+		position:relative;
 	}
 
 	#nyhetsvindu{
-		border:solid;
-		border-color: black;
-		height: 450px;
-		width: 470px;
-		float:left;
-	}
-
-	#tabellen{
-		margin:50px;
-		float:right;
-	}
-
-	#top{
-		border: solid;
-		border-color: blue;
+		border: 1px solid;
+		border-color: pink;
 		padding: 10px;
-		height:500px;
-		width: 1000px;
+		height: 450px;
+		width: 450px;
+		float:left;
+		margin-left:auto;
+		margin-right: auto;
+		text-align:center;
+		margin-top: auto;
+		margin-bottom: 10px;
 	}
+
+	#rullevindu {
+		height:400px;
+		width: 400px;
+		overflow: hidden;
+		padding:5px;
+	}
+
+	#rullevindu p{
+		height: 400px;
+		width: 400px;
+		padding:2px;
+	}
+
+	#aside_tabell{
+		height: 200px;
+		width:400px;
+		border:1px solid black;
+		float:right;
+		text-align:center;
+		position:top;
+		margin-bottom:5px;
+	}
+
+	#aside_profil{
+		height:200px;
+		width:400px;
+		border: 1px solid black;
+		float:right;
+		text-align:center;
+		position: bottom;
+		margin-top:5px;
+	}
+
+	aside{
+		padding:10px;
+	}
+
 	</style>
 </head>
 
 <body>
 
-<section id="top">
+<article id="top">
 
 <div id="nyhetsvindu">
-<ul id="rulleliste">
+<ul id="rullevindu">
 
 		<p> 
-			<img src="tryout1.JPG" title="Tryout" alt="Tryout" width="460" height="350">
+			<img src="tryout1.jpg" title="Tryout" alt="Tryout" width="460" height="350">
 			Nye spillere på plass
 		</p>
 
@@ -74,9 +108,8 @@
 </ul>
 </div>
 
-
-<aside id="tabellen"> 
-	<table id="tabell">
+<aside> 
+	<table id="aside_tabell">
 	<thead>
 		<tr>
 			<th> Pos </th>
@@ -158,8 +191,13 @@
 			<td> -104 </td>
 		</tr>
 </table>
+	<section id="aside_profil">
+		<p> Her skal det stå noe </p>
+		<p> i en firkant.Profiler </p>
+	</section>
 </aside>
-</section>
+
+</article>
 
 </body>
 </html>
