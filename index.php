@@ -21,22 +21,28 @@ $page = $_GET['page'];
 
 	<nav>
 		<ul id="meny">
-			<li> <a href="index.php"> Hjem </a> </li>
-			<li> <a href="#"> Lag </a>
-				<ul>
-					<li> <a href="index.php?page=1"> Herre </a> </li>
-					<li> <a href="#"> Dame </a> </li>						
-				</ul>
+			<li> <a href="hjem.html"> Hjem </a> </li>
+			
+			<li> Lag
+			<ul>
+				<li> <a href="index.php?page=herrelag.html"> Herre </a> </li>
+				<li> <a href="index.php?page=damelag.html"> Dame </a> </li>						
+			</ul>
 			</li>
-			<li> <a href="#"> Profiler </a> </li>
-			<li> <a href="#"> Media </a>
-				<ul>
-					<li> <a href="#"> Bilder </a> </li>
-					<li> <a href="#"> Video </a> </li>				
-				</ul>
-			</li>	
-			<li> <a href="#"> Kontakt </a> </li>		
-		</ul>
+			
+			<li>Profiler 
+			<ul>
+				<li> <a href="index.php?page=profiler"> Herre </a> </li>
+				<li> <a href="index.php?page="> Dame </a> </li>						
+			</ul>
+			</li>
+			
+			<li> <a href="index.php?page=media"> Media </a></li>
+			
+			<li> <a href="index.php?page=nyheter"> Nyheter </a></li>
+				
+			<li> <a href="index.php?page=kontakt"> Kontakt </a> </li>		
+		
 	</nav>
 
 </header>
@@ -44,7 +50,15 @@ $page = $_GET['page'];
 	<?php
 	switch($page){
 
-		case "nyheter":
+		case "herrelag";
+		include('herrelag.html');
+		break;
+		
+		case "damelag";
+		include('herrelag.html');
+		break;
+		
+		case "nyheter";
 		include('nyheter.html');
 		break;
 
@@ -52,8 +66,8 @@ $page = $_GET['page'];
 		include('profiler.html');
 		break;
 
-		case "3":
-		include('underside3.html');
+		case "kontakt":
+		include('kontaktskjema.html');
 		break;
 
 		default: include('hjem.html');
