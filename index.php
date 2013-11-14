@@ -43,6 +43,7 @@ $page = $_GET['page'];
 				
 			<li> <a href="index.php?page=kontakt"> Kontakt </a> </li>		
 		
+	
 	</nav>
 
 </header>
