@@ -21,12 +21,12 @@ $page = $_GET['page'];
 
 	<nav>
 		<ul id="meny">
-			<li> <a href="hjem.html"> Hjem </a> </li>
+			<li> <a href="index.php?page=hjem"> Hjem </a> </li>
 			
 			<li> Lag
 			<ul>
-				<li> <a href="index.php?page=herrelag.html"> Herre </a> </li>
-				<li> <a href="index.php?page=damelag.html"> Dame </a> </li>						
+				<li> <a href="index.php?page=herrelag"> Herre </a> </li>
+				<li> <a href="index.php?page=damelag"> Dame </a> </li>						
 			</ul>
 			</li>
 			
