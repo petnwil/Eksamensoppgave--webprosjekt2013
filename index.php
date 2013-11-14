@@ -56,7 +56,7 @@ $page = $_GET['page'];
 		break;
 		
 		case "damelag";
-		include('herrelag.html');
+		include('damelag.html');
 		break;
 		
 		case "nyheter";
