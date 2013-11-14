@@ -70,6 +70,10 @@ $page = $_GET['page'];
 		case "kontakt":
 		include('kontaktskjema.html');
 		break;
+		
+		case "media";
+		include('media.html');
+		break;
 
 		default: include('hjem.html');
 		break;
