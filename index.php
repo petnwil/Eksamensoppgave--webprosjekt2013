@@ -11,8 +11,10 @@ $page = $_GET['page'];
 
 </head>
 
+<body>
+
 	<header id="header">
-		<img src="baflogo.jpg" alt="Logo" title="Logo">
+		<img id="header_bilde" src="baflogo.jpg" alt="Logo" title="Logo">
 		<h1>
 			BI Athletics Fotball
 		</h1>
@@ -33,38 +35,35 @@ $page = $_GET['page'];
 					<li> <a href="#"> Video </a> </li>				
 				</ul>
 			</li>	
-			<li> <a href="#"> Kontakt </a> </li>
-			<li> <a href="#"> Søkefelt </li>		
+			<li> <a href="#"> Kontakt </a> </li>		
 		</ul>
 	</nav>
 
 </header>
-<br>
-<body>
-	<section id="innholdet">
+
 	<?php
 	switch($page){
 
 		case "1":
 		include('underside1.html');
-			break;
+		break;
 
-			case "2":
-			include('underside2.html');
-				break;
+		case "2":
+		include('underside2.html');
+		break;
 
-				case "3":
-				include('underside3.html');
-				break;
+		case "3":
+		include('underside3.html');
+		break;
 
-				default: include('hjem.html');
-				break;
-			}
+		default: include('hjem.html');
+		break;
+	}
+	?>
 
-			?>
-	</section>
-			<footer>
-				<p>Laget av gruppe 41</p>
-			</footer>
-		</body>
-		</html>
+<footer>
+	<p> Laget av gruppe 41 <p>
+</footer>
+
+</body>
+</html>

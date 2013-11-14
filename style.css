@@ -1,31 +1,23 @@
-/*HEADER*/
-#header img{
-	width:900px;
-	height: 250px;
-	padding-right:50px;
-	padding-left:50px;
-	padding-top: 0;
-	padding-bottom:0;
-}
-
 body{
-	background-color:navy;
-	padding-left:50px;
-	padding-right:50px;
+	background-image: url('bakgrunntexture2.jpg');
+	background-image: no-repeat;
+	background-attachment: fixed;
 }
 
-/*INNMATEN*/
-#innholdet{
-	border: 1px solid blue;
-	border-radius:3px;
-	text-align:center;
-	padding: 50px;
-	background-color: white;
-	margin-left: auto;
+/*HEADER*/
+#header{
+	margin-left:100px;
+	margin-right:auto;
+	margin-bottom:5px;
+}
+
+#header_bilde{
+	height:200px;
+	width:250px;
+	display:block;
+	margin-left:auto;
 	margin-right:auto;
 }
-
-
 
 
 /*MENYEN*/
@@ -42,11 +34,13 @@ body{
 
 #meny{
 	height: 40px;
-	width:380px; /*bredden på hele linjen*/
+	width:300px; /*bredden på hele linjen*/
 	background: blue;
-	border: 1px solid;
+	border: 1px solid grey;
 	border-radius:3px;
-	position:relative; /*kanskje ikke noen funksjon, må teste ut*/
+	/*margin-left:100px; */
+
+	/*position:relative; kanskje ikke noen funksjon, må teste ut*/
 }
 
 #meny li{
@@ -65,9 +59,9 @@ body{
 	line-height: 30px;
 	text-decoration: none;
 
-	/*border-left: 1px solid;
-	border-right: 1px solid;
-	border-color: black;*/
+	border-left: 1px solid;
+	/*border-right: 1px solid;*/
+	border-color: white;
 
 	font-family: Arial, sans-serif;
 	font-weight: bold;
@@ -125,5 +119,112 @@ body{
 #meny ul li:last-child a{
 	border: none;
 }
+/*Meny - SLUTT */
 
 
+/*RAMME rundt sidene */
+#ramme{
+	border:1px solid grey;
+	border-radius:2px;
+	background:white;
+	padding:3px;
+	margin-left:100px;
+	margin-right: 100px;
+}
+
+footer{
+	text-align:center;
+}
+
+
+
+/*HJEMSIDEN*/
+
+	/*Venstreside*/
+
+	#nyhetsvindu{
+		border: 1px solid;
+		border-color: pink;  /*rosa for å kun se rammen under jobbing*/
+		padding: 5px;
+		height: 400px;
+		width: 900px;
+		text-align:center;
+	}
+
+				#rullevindu {
+					height:380px;
+					width: 380px;
+					overflow: hidden;
+					padding:5px;
+					margin:;
+					float:left;
+				}
+
+
+				#p_rull{
+					font-family: Arial, sans-serif; /*sans-serif dropper "sløyfe-ender" på bokstavene*/
+					padding:2px;
+				}
+	/*Venstreside - SLUTT */
+
+
+	/*Høyre side*/	
+
+	aside{
+		float:right;
+	}	
+
+
+			/*Tabellen*/
+
+			#aside_tabell{
+				background-color:grey;
+				height: 200px;
+				width:300px;
+				border:1px solid black;
+				text-align:center;
+				/*margin-bottom:4px; */
+				font-family: Arial, sans-serif;
+				font-size: 14px;
+				position:relative;
+			}
+
+			#topp_linje{
+				color: white;
+				background-color:black;
+			}
+
+			#lag{
+				text-align:left;
+				padding-left: 10px;
+				border-bottom: 1px solid black;
+			}
+
+			#poeng{
+				font-weight:bold;
+				border-bottom: 1px solid black;
+			}
+
+			#BI{
+				font-weight:bold;  /*uthevet skrift!!!*/
+				background:;
+			}
+
+			#sentrert{
+				border-bottom: 1px solid black;
+				padding:2px;
+			}
+			/*Tabell - SLUTT */
+
+
+			/*Profilviser */
+			#profil{
+				height:150px;
+				width:150px;
+				border: 1px solid black;
+				text-align:center;
+			}
+	/*Høyreside - SLUTT*/
+
+
+/* HJEMSIDEN - SLUTT */
