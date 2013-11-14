@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<!-- <html> -->
+<!-- <head>
+	<meta charset="utf-8">
+	<title> Hjem </title>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"> 
+	</script>
+
+	<script>
+	function rulle()
+	{
+		$('#rullevindu p:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
+	}
+	setInterval(function(){ rulle()}, 5000);
+
+	</script> 
+
+	 <style>
+
+	/*#nyhetsvindu{
+		border: 1px solid;
+		border-color: pink;
+		padding: 10px;
+		height: 450px;
+		width: 450px;
+		float:left;
+		margin-left:auto;
+		margin-right: auto;
+		text-align:center;
+		margin-top: auto;
+		margin-bottom: 10px;
+	}
+
+	#rullevindu {
+		height:400px;
+		width: 400px;
+		overflow: hidden;
+		padding:5px;
+	}
+
+	#rullevindu p{
+		height: 400px;
+		width: 400px;
+		padding:2px;
+	}
+
+	#p_rull{
+		font-family: Arial, sans-serif; /*sans-serif dropper "sløyfe-ender" på bokstavene*/
+	}
+
+	#aside_profil{
+		height:200px;
+		width:400px;
+		border: 1px solid black;
+		float:right;
+		text-align:center;
+		position: bottom;
+		margin-top:auto;
+	}
+
+
+
+	/*Tabellen*/
+	/*
+	#aside_tabell{
+		background-color:grey;
+		height: 200px;
+		width:400px;
+		border:1px solid black;
+		float:right;
+		text-align:center;
+		position:top;
+		margin-bottom:4px;
+		font-family: Arial, sans-serif;
+		font-size: 14px;
+	}
+
+	#topp_linje{
+		color: white;
+		background-color:black;
+	}
+
+	#lag{
+		text-align:left;
+		padding-left: 10px;
+		border-bottom: 1px solid black;
+	}
+
+	#poeng{
+		font-weight:bold;
+		border-bottom: 1px solid;
+	}
+
+	#BI{
+		font-weight:bold;  /*uthevet skrift!!!*/
+		background:;
+		text-color:blue;
+	}
+
+	#sentrert{
+		border-bottom: 1px solid;
+		padding:2px;
+	}
+
+
+
+
+	</style>
+</head>
+<body> -->
+	<section id="ramme">
+<div id="nyhetsvindu">
+	<ul id="rullevindu">
+
+		<p id="p_rull"> 
+			<img src="tryout1.jpg" title="Tryout" alt="Tryout" width="370" height="350">
+			Nye spillere på plass
+		</p>
+
+		<p id="p_rull" >
+			<img src="tryout2.JPG" title="Tryout2" alt="Tryout2" width="370" height="350">
+			Link til spillerprofiler 
+		</p>
+	
+		<p id="p_rull"> Kampreferat </p>
+	
+		<p id="p_rull"> Intervju </p>
+	
+	</ul>
+
+<aside> 
+	<table id="aside_tabell">
+	<thead>
+		<tr id="topp_linje">
+			<th id="sentrert"> Pos </th>
+			<th id="lag"> Lag </th>
+			<th id="sentrert"> Poeng </th>
+			<th id="sentrert"> Kamper </th>
+			<th id="sentrert"> Målforskjell </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td id="sentrert"> 1 </td>
+			<td id="lag"> NIH </td>
+			<td id="poeng"> 42 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> 49 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 2 </td>
+			<td id="lag"> Haslum </td>
+			<td id="poeng"> 40 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> 32 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 3 </td>
+			<td id="lag"> Frognerparken 2 </td>
+			<td id="poeng"> 38 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> 38 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 4 </td>
+			<td id="lag"> Bygdøy Monolitten 2 </td>
+			<td id="poeng"> 34 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> 39 </td>
+		</tr>
+		<tr id="BI">
+			<td id="sentrert"> 5 </td>
+			<td id="lag"> BI Athletics </td>
+			<td id="poeng"> 31 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> 17 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 6 </td>
+			<td id="lag"> Lommedalen 2 </td>
+			<td id="poeng"> 24 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> -8 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 7 </td>
+			<td id="lag"> Fagerborg 2 </td>
+			<td id="poeng"> 20 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> -11 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 8 </td>
+			<td id="lag"> Sørkedalen </td>
+			<td id="poeng"> 17 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> -14 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 9 </td>
+			<td id="lag"> Vinderen </td>
+			<td id="poeng"> 14 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> -38 </td>
+		</tr>
+		<tr>
+			<td id="sentrert"> 10 </td>
+			<td id="lag"> Huk 2 </td>
+			<td id="poeng"> 3 </td>
+			<td id="sentrert"> 18 </td>
+			<td id="sentrert"> -104 </td>
+		</tr>
+	</table>
+
+
+	<!-- <div id="profil">
+		<p> Her skal det stå noe </p>
+		<p> i en firkant.Profiler </p>
+	</div> -->
+</aside>
+
+</div>
+
+
+
+</section>
+<!-- </html> -->
