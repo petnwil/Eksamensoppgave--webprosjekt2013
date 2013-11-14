@@ -34,7 +34,7 @@ body{
 
 #meny{
 	height: 40px;
-	width:300px; /*bredden på hele linjen*/
+	width:370px; /*bredden på hele linjen*/
 	background: blue;
 	border: 1px solid grey;
 	border-radius:3px;
