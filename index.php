@@ -44,12 +44,12 @@ $page = $_GET['page'];
 	<?php
 	switch($page){
 
-		case "1":
-		include('underside1.html');
+		case "nyheter":
+		include('nyheter.html');
 		break;
 
-		case "2":
-		include('underside2.html');
+		case "profiler":
+		include('profiler.html');
 		break;
 
 		case "3":
