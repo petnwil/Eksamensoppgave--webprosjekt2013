@@ -74,6 +74,10 @@ $page = $_GET['page'];
 		case "media";
 		include('media.html');
 		break;
+		
+		case "henvendelse";
+		include('web_hen.php');
+		break;
 
 		default: include('hjem.html');
 		break;
