@@ -14,15 +14,15 @@ $(document).ready(function(){
 		if( $(this).attr("class") == "mindre")
 		{
 			$(this).siblings("img").css({
-				height: "100px",
-				width: "auto"
+				height: "-=300px",
+				//width: "auto"
 			});
 		}
 		else
 		{
 			$(this).siblings("img").css({
-				height: "300px",
-				width: "auto"
+				height: "+=300px",
+				//width: "auto"
 			});
 		}
 	});
