@@ -14,23 +14,20 @@ $page = $_GET['page'];
 <body>
 
 	<header id="header">
-		<img id="header_bilde" src="baflogo.jpg" alt="Logo" title="Logo">
-		<h1>
-			BI Athletics Fotball
-		</h1>
+		<img id="header_bilde" src="nyheader.jpg" alt="Logo" title="Logo">
 
 	<nav>
 		<ul id="meny">
 			<li> <a href="index.php?page=hjem"> Hjem </a> </li>
 			
-			<li> Lag
+			<li> <a> Lag </a>
 			<ul>
 				<li> <a href="index.php?page=herrelag"> Herre </a> </li>
 				<li> <a href="index.php?page=damelag"> Dame </a> </li>						
 			</ul>
 			</li>
 			
-			<li>Profiler 
+			<li> <a> Profiler </a>
 			<ul>
 				<li> <a href="index.php?page=profiler"> Herre </a> </li>
 				<li> <a href="index.php?page="> Dame </a> </li>						
@@ -74,9 +71,9 @@ $page = $_GET['page'];
 		case "media";
 		include('media.html');
 		break;
-		
+
 		case "henvendelse";
-		include('web_hen.php');
+		include('web_hen.html');
 		break;
 
 		default: include('hjem.html');
@@ -85,7 +82,8 @@ $page = $_GET['page'];
 	?>
 
 <footer>
-	<p> Laget av gruppe 41 <p>
+	<p> Tasmia Faruque - Magnus Tønsager - Mimi Wikant - Peter Wilhelmsen </p>
+	<p> Gruppe 41 </p>
 </footer>
 
 </body>
