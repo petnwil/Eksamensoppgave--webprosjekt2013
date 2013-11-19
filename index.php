@@ -8,6 +8,10 @@ $page = $_GET['page'];
 	<title>Hjemmeside</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" title="styleen" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+	</script>
+	<script src="./script.js">
+	</script>
 
 </head>
 
