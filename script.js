@@ -13,18 +13,18 @@ $(document).ready(function(){
 
 		if( $(this).attr("class") == "mindre")
 		{
-			$(this).siblings("img").css({
+			$(this).siblings("img").animate({
 				height: "-=300px",
-				//width: "auto"
+				width: "auto"
 			});
-		}
+		}//end of if
 		else
 		{
-			$(this).siblings("img").css({
+			$(this).siblings("img").animate({
 				height: "+=300px",
-				//width: "auto"
+				width: "auto"
 			});
-		}
-	});
+		}//end of else
+	});//end of click(function)
 
 });
