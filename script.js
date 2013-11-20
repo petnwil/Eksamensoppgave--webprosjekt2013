@@ -28,8 +28,39 @@ $(document).ready(function(){
 	});//end of click(function)
 });//end of ready(function)
 
+
+
+
+/*Script for rullevindu*/
 function rulle()
 {
 	$('#rullevindu p:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
 }
 setInterval(function(){ rulle()}, 5000);
+
+
+
+
+
+/*Sript for Easteregg */
+	$(document).ready(function(){
+		teller="0";
+		$("#header_bilde").mouseover(function(){
+			{
+				teller++;
+			}
+			if(teller == 3)
+			{
+			$("#ramme").css("background-color","pink");
+			/*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
+			}
+			if(teller == 5)
+			{
+				$("#ramme").css("background-color","yellow");
+			}
+			if(teller == 10)
+			{
+				alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og ønsker dere lykke til neste sesong! :-)");
+			}
+		});
+	});
