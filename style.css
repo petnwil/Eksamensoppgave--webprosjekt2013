@@ -238,3 +238,17 @@ footer{
 }
 
 /* HJEMSIDEN - SLUTT */
+
+/* KONTAKTSIDE*/
+
+#styret {
+border: 1px solid black;
+}
+
+#styret img {
+	
+}
+
+form {
+	float: left;
+}
