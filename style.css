@@ -26,22 +26,22 @@ body{
 	margin:0;
 	padding:0;
 	border: none;
-	outline: none;
+	/*outline: none; */
 }
 
 #meny{
 	height: 40px;
-	width:940px; /*bredden på hele linjen*/
+	/*width:940px; /*bredden på hele linjen*/
 	background: black;
 	border: 1px solid;
 	/*position:relative; kanskje ikke noen funksjon, må teste ut*/
 }
 
 #meny li{
-	position:relative;
-	list-style: none;
+	position:relative; /*Viser sub-meny*/
+	/*list-style: none; */
 	float: left; /* legge menyen horisontalt*/
-	display: block;
+	display: inline;
 	height:40px;
 }
 
@@ -52,15 +52,11 @@ body{
 	margin: 6px 0;
 	line-height: 30px;
 	text-decoration: none;
-
 	border-left: 1px solid;
-	/*border-right: 1px solid;*/
 	border-color: white;
-
 	font-family: Arial, sans-serif;
 	font-weight: bold;
 	font-size: 10px;
-
 	color: white;
 }
 
@@ -73,16 +69,14 @@ body{
 }
 
 #meny li:hover > a{
-	color: navy;
+	color: green;
 }
 
 #meny ul{
 	position:absolute;
 	top: 40px;      /*avstand mellom hoved-ord og ord i sub-meny*/
-	
-
 	opacity: 0;
-	background: #080425;
+	background: black;
 }
 
 #meny li:hover ul{
@@ -90,16 +84,16 @@ body{
 }
 
 #meny ul li{
-	height: 0;
+	/*height: 0;
 	overflow: hidden;
-	padding: 0;
+	padding: 0; */
 }
 
-#meny li:hover > ul li{
+/*#meny li:hover > ul li{
 	height: 40px;
 	overflow: visible;
 	padding: 0;
-}
+} */
 
 #meny ul li a{
 	width: 50px;
@@ -143,14 +137,14 @@ footer{
 	#nyhetsvindu{
 		/*border: 1px solid;
 		border-color: pink;  /*rosa for å kun se rammen under jobbing*/
-		padding: 5px;
+		/*padding: 5px;
 		padding-top:10px;
 		height: 480px;
 		width: 925px;
 		text-align:center;
 		margin-bottom:0;
 		margin-left:auto;
-		margin-right:auto;
+		margin-right:auto; */
 	}
 
 				#rullevindu {
@@ -158,9 +152,11 @@ footer{
 					width: 381px;
 					overflow: hidden;
 					padding:0;
-					margin-left:20px;
-					margin-top:50px;
+					margin:0; /*tilført*/
+					margin-left:auto; /*20px*/
+					margin-top:auto; /*50px*/
 					float:left;
+					border: 1px solid grey;
 				}
 
 
@@ -175,10 +171,10 @@ footer{
 
 	/*Høyre side*/	
 
-	aside{
+	/* Kommentert ut aside{
 		float:right;
 		margin-right:50px;
-	}	
+	} */ 	
 
 
 			/*Tabellen*/
@@ -192,6 +188,8 @@ footer{
 				margin-bottom:4px;
 				font-family: Arial, sans-serif;
 				font-size: 14px;
+				margin-left:auto; /*tilført*/
+				margin-right:auto; /*tilført*/
 			}
 
 			#topp_linje{
