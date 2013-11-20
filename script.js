@@ -4,7 +4,7 @@ Det som skal vises/skjules mÃ¥ ligge i en article tagg.*/
 $(document).ready(function(){
 	$("button").css("display", "block");
 	$(".mindre").toggle();
-	$("article").toggle();
+	$(".mindre").siblings("article").toggle();
 
 	$("button").click(function(){
 		$(this).siblings("button").toggle();
@@ -26,5 +26,10 @@ $(document).ready(function(){
 			});
 		}//end of else
 	});//end of click(function)
+});//end of ready(function)
 
-});
+function rulle()
+{
+	$('#rullevindu p:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
+}
+setInterval(function(){ rulle()}, 5000);
