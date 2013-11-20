@@ -2,6 +2,33 @@
 Det som skal vises/skjules mÃ¥ ligge i en article tagg.*/
 
 $(document).ready(function(){
+	/*kode for profilvindu*/
+	$( "#profil" ).load( "./profiler.html .spiller",function(){
+		$("#profil > .spiller").toggle();
+		var ant = $("#profil").children().length;
+		var nummer = 1 + Math.floor(Math.random() * ant);
+		var nr = "#profil .spiller:nth-child(" + nummer + ")";
+		$(nr).toggle(0, function(){
+			$("button").remove();
+			$(".spiller > article").css({
+				"width":"170px",
+				"float":"right",
+				"margin-right":"1px",
+				"height":"160px"
+			});
+			$(".spiller > img").css({
+				"height":"auto",
+				"max-width":"170px",
+				"max-height":"160px",
+				"float":"left",
+				"margin-left":"1px",
+				"margin-right":"auto"
+			});
+			$(".spiller > h3").css({ "margin":"1px" });
+			$("#profil").append("<a href='./index.php?page=profiler'><p>Link til flere spillerprofiler</p><a>");
+		});
+	});
+	/*kode for knapper*/
 	$("button").css("display", "block");
 	$(".mindre").toggle();
 	$(".mindre").siblings("article").toggle();
