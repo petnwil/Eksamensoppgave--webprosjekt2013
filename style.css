@@ -1,19 +1,21 @@
 body{
-	background-image: url('bakgrunntexture2.jpg');
-	background-image: no-repeat;
-	background-attachment: fixed;
+        background-image: url('bakgrunntexture2.jpg');
+        background-image: no-repeat;
+        background-attachment: fixed;
 }
 
 /*HEADER*/
 #header{
-	margin-left:100px;
-	margin-bottom:5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        width: 942px;
 }
 
 #header_bilde{
-	height:240px;
-	width:942px;
-	display:block;
+        height:240px;
+        width:942px;
+        display:block;
 }
 
 
@@ -23,218 +25,223 @@ body{
 #meny ul,
 #meny li,
 #meny ul, li, a{
-	margin:0;
-	padding:0;
-	border: none;
-	/*outline: none; */
+        margin:0;
+        padding:0;
+        border: none;
+        /*outline: none; */
 }
 
 #meny{
-	height: 40px;
-	/*width:940px; /*bredden på hele linjen*/
-	background: black;
-	border: 1px solid;
-	/*position:relative; kanskje ikke noen funksjon, må teste ut*/
+        height: 40px;
+        /*width:940px; /*bredden på hele linjen*/
+        background: black;
+        border: 1px solid;
+        /*position:relative; kanskje ikke noen funksjon, må teste ut*/
 }
 
 #meny li{
-	position:relative; /*Viser sub-meny*/
-	/*list-style: none; */
-	float: left; /* legge menyen horisontalt*/
-	display: inline;
-	height:40px;
+        position:relative; /*Viser sub-meny*/
+        /*list-style: none; */
+        float: left; /* legge menyen horisontalt*/
+        display: inline;
+        height:40px;
 }
 
 
-#meny li a{				/* Hovedlinjen*/
-	display: block;
-	padding: 0 15px;
-	margin: 6px 0;
-	line-height: 30px;
-	text-decoration: none;
-	border-left: 1px solid;
-	border-color: white;
-	font-family: Arial, sans-serif;
-	font-weight: bold;
-	font-size: 10px;
-	color: white;
+#meny li a{                                /* Hovedlinjen*/
+        display: block;
+        padding: 0 15px;
+        margin: 6px 0;
+        line-height: 30px;
+        text-decoration: none;
+        border-left: 1px solid;
+        border-color: white;
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        font-size: 10px;
+        color: white;
 }
 
 #meny li:first-child a{
-	border-left: none;
+        border-left: none;
 }
 
 #meny li:last-child a{
-	border-right: none;
+        border-right: none;
 }
 
 #meny li:hover > a{
-	color: #D8FF48;
+        color: #D8FF48;
 }
 
 #meny ul{
-	position:absolute;
-	top: 40px;      /*avstand mellom hoved-ord og ord i sub-meny*/
-	opacity: 0;
-	background: black;
+        position:absolute;
+        top: 40px;      /*avstand mellom hoved-ord og ord i sub-meny*/
+        opacity: 0;
+        background: black;
 }
 
 #meny li:hover ul{
-	opacity: 1;
+        opacity: 1;
 }
 
 #meny ul li{
-	/*height: 0;
-	overflow: hidden;
-	padding: 0; */
+        /*height: 0;
+        overflow: hidden;
+        padding: 0; */
 }
 
 /*#meny li:hover > ul li{
-	height: 40px;
-	overflow: visible;
-	padding: 0;
+        height: 40px;
+        overflow: visible;
+        padding: 0;
 } */
 
 #meny ul li a{
-	width: 50px;
-	padding: 4px 4px 4px 25px;
-	margin:0;
-	border: none;
-	border-bottom: 1px solid;
+        width: 50px;
+        padding: 4px 4px 4px 25px;
+        margin:0;
+        border: none;
+        border-bottom: 1px solid;
 }
 
 #meny ul li:last-child a{
-	border: none;
+        border: none;
 }
 /*Meny - SLUTT */
 
 
 /*RAMME rundt sidene */
 #ramme{
-	border:1px solid grey;
-	border-radius:2px;
-	background: white;
-	padding:3px;
-	margin-left:100px;
-	margin-right: 100px;
-	margin-bottom:0;
+        border:1px solid grey;
+        border-radius:2px;
+        background: white;
+        padding:3px;
+        margin-left:auto;
+        margin-right: auto;
+        margin-bottom:0;
+        width: 942px;
+        height: 700px;
 }
 
 footer{
-	text-align:center;
-	background:#080425;
-	color:white;
-	margin-left:100px;
-	margin-right:100px;
+        text-align:center;
+        background:#080425;
+        color:white;
+        margin-left:auto;
+        margin-right:auto;
+        width: 942px;
 }
 
 
 
 /*HJEMSIDEN*/
 
-	/*Venstreside*/
+        /*Venstreside*/
 
-	#nyhetsvindu{
-		/*border: 1px solid;
-		border-color: pink;  /*rosa for å kun se rammen under jobbing*/
-		/*padding: 5px;
-		padding-top:10px;
-		height: 480px;
-		width: 925px;
-		text-align:center;
-		margin-bottom:0;
-		margin-left:auto;
-		margin-right:auto; */
-	}
+        #nyhetsvindu{
+                /*border: 1px solid;
+                border-color: pink;  /*rosa for å kun se rammen under jobbing*/
+                /*padding: 5px;
+                padding-top:10px;
+                height: 480px;
+                width: 925px;
+                text-align:center;
+                margin-bottom:0;
+                margin-left:auto;
+                margin-right:auto; */
+        }
 
-				#rullevindu {
-					height:372px;
-					width: 381px;
-					overflow: hidden;
-					padding:0;
-					margin:0; /*tilført*/
-					margin-left:auto; /*20px*/
-					margin-top:auto; /*50px*/
-					float:left;
-					border: 1px solid grey;
-				}
-
-
-				#p_rull{
-					font-family: Arial, sans-serif; /*sans-serif dropper "sløyfe-ender" på bokstavene*/
-					padding:0;
-					margin:0;
-					padding-top:0;
-				}
-	/*Venstreside - SLUTT */
+                                #rullevindu {
+                                        height:400px;
+                                        width: 500px;
+                                        overflow: hidden;
+                                        padding:0;
+                                        margin:0; /*tilført*/
+                                        margin-left:auto; /*20px*/
+                                        margin-top:auto; /*50px*/
+                                        float:left;
+                                        border: 1px solid grey;
+                                }
 
 
-	/*Høyre side*/	
-
-	/* Kommentert ut aside{
-		float:right;
-		margin-right:50px;
-	} */ 	
-
-
-			/*Tabellen*/
-
-			#aside_tabell{
-				background-color:#282828;
-				height: 200px;
-				width:350px;
-				border:1px solid grey;
-				text-align:center;
-				margin-bottom:4px;
-				font-family: Arial, sans-serif;
-				font-size: 14px;
-				margin-left:auto; /*tilført*/
-				margin-right:auto; /*tilført*/
-			}
-
-			#topp_linje{
-				color: white;
-				background-color:black;
-			}
-
-			#lag{
-				text-align:left;
-				padding-left: 10px;
-				border-bottom: 1px solid black;
-				color:white;
-			}
-
-			#poeng{
-				font-weight:bold;
-				border-bottom: 1px solid black;
-				color:white;
-			}
-
-			/*
-			#BI{
-				font-weight:bold;  /*uthevet skrift!!!
-				background:;
-				color:white;
-			} */
-
-			#sentrert{
-				border-bottom: 1px solid black;
-				padding:2px;
-				color:white;
-			}
-			/*Tabell - SLUTT */
+                                #p_rull{
+                                        font-family: Arial, sans-serif; /*sans-serif dropper "sløyfe-ender" på bokstavene*/
+                                        padding:0;
+                                        margin:0;
+                                        padding-top:0;
+                                }
+        /*Venstreside - SLUTT */
 
 
-			/*Profilviser */
-			#profil{
-				height:200px;
-				width:345px;
-				border: 1px solid black;
-				text-align:center;
-			}
-	/*Høyreside - SLUTT*/
+        /*Høyre side*/        
+
+        /* Kommentert ut aside{
+                float:right;
+                margin-right:50px;
+        } */         
+
+
+                        /*Tabellen*/
+
+                        #aside_tabell{
+                                background-color:#282828;
+                                height: 200px;
+                                width:350px;
+                                border:1px solid grey;
+                                text-align:center;
+                                margin-bottom:4px;
+                                font-family: Arial, sans-serif;
+                                font-size: 14px;
+                                margin-left:auto; /*tilført*/
+                                margin-right:10px; /*tilført*/
+                        }
+
+                        #topp_linje{
+                                color: white;
+                                background-color:black;
+                        }
+
+                        #lag{
+                                text-align:left;
+                                padding-left: 10px;
+                                border-bottom: 1px solid black;
+                                color:white;
+                        }
+
+                        #poeng{
+                                font-weight:bold;
+                                border-bottom: 1px solid black;
+                                color:white;
+                        }
+
+                        /*
+                        #BI{
+                                font-weight:bold;  /*uthevet skrift!!!
+                                background:;
+                                color:white;
+                        } */
+
+                        #sentrert{
+                                border-bottom: 1px solid black;
+                                padding:2px;
+                                color:white;
+                        }
+                        /*Tabell - SLUTT */
+
+
+                        /*Profilviser */
+                        #profil{
+                                height:200px;
+                                width:345px;
+                                border: 1px solid black;
+                                text-align:center;
+                                margin-right: 10px;
+                                float: right;
+                        }
+        /*Høyreside - SLUTT*/
 .spillerBilde{
-	height: 100px;
+        height: 100px;
 }
 
 /* HJEMSIDEN - SLUTT */
@@ -246,9 +253,9 @@ border: 1px solid black;
 }
 
 #styret img {
-	
+        
 }
 
 form {
-	float: left;
+        float: left;
 }
