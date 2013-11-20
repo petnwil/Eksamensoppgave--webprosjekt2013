@@ -241,14 +241,34 @@ footer{
 
 /* KONTAKTSIDE*/
 
+section {
+	font-family: arial;
+}
+
 #styret {
-border: 1px solid black;
+	border: 1px solid black;
+	margin: 1em;
+	margin-left: 30em;
+	padding: 1em;
 }
 
 #styret img {
-	
+	margin: 1em;
+	height: 150px;
+	float: left;
 }
 
 form {
 	float: left;
+	padding: 3em;
+	border: 1px solid black;
+	margin-left: 2em;
+	padding-right: 10em;
+	background-color: #E0E0E0;
+}
+
+h2 {
+	text-align: center;
+	margin-bottom: 2em;
+	font-family: arial;
 }
