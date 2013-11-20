@@ -18,7 +18,7 @@ $page = $_GET['page'];
 <body>
 
 	<header id="header">
-		<img id="header_bilde" src="nyheader.jpg" alt="Logo" title="Logo">
+		<img id="header_bilde" src="sbioheader.jpg" alt="Logo" title="Logo">
 
 	<nav>
 		<ul id="meny">
