@@ -184,6 +184,18 @@ footer{
 
                         /*Tabellen*/
 
+                        #tabellOskrift{
+                        float:right;
+                        border:1px solid grey;
+                        background-color: grey;
+                        height:30px;
+                        width:348px;
+                        text-align:center;
+                        margin:0;
+                        margin-right:10px;
+                        padding-top:10px;
+                }
+
                         #aside_tabell{
                                 background-color:#282828;
                                 height: 200px;
