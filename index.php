@@ -1,5 +1,8 @@
 <?php
-$page = $_GET['page'];
+if(isset($_GET['page']) )
+	$page = $_GET['page'];
+else
+	$page = "hjem"
 ?>
 
 <!DOCTYPE html>
@@ -48,7 +51,7 @@ $page = $_GET['page'];
 	</nav>
 
 </header>
-
+<section id="ramme">
 	<?php
 	switch($page){
 
@@ -84,7 +87,7 @@ $page = $_GET['page'];
 		break;
 	}
 	?>
-
+</section>
 <footer>
 	<p> Tasmia Faruque - Magnus Tønsager - Mimi Wikant - Peter Wilhelmsen </p>
 	<p> Gruppe 41 </p>
