@@ -1,0 +1,242 @@
+/*Lager et stilark som skal ta utgangspunkt i universell utforming  */
+
+
+body{
+        background-color: gray;
+}
+
+/*HEADER*/
+#header{
+        margin-left:100px;
+        margin-bottom:5px;
+}
+
+#header_bilde{
+        height:240px;
+        width:200px;
+		margin-left:-110px;
+		margin-top:-25px;
+		
+		
+		}
+/*Endrer på størrelsen til bildet med mindre pixler, slik at man kan finne frem til det vesentlige innholdet på siden.*/
+
+
+/*MENYEN*/
+
+
+#meny ul, li, a{
+        margin:0;
+        padding:0;
+        border: none;
+        outline: none;
+}
+
+#meny{
+ background-color: #0066CC;
+  box-shadow: 6px 6px 6px black;
+  width: 160px;
+  height: 40%;
+  border-radius: 20px;
+  float: left;
+  display: inline;
+  margin-left: -110px;
+  padding: 0;
+  margin-top: 6px;
+  margin-right: 20px
+  
+        
+}
+
+/*bruker blå farge for å markere at det er menylinjen. Har prøvd å sette opp de ulike html-sidene i en ordnet rekkefølge og har valgt å gi menylinjen en mørkere
+farge som kan lett fange oppmerksomheten til brukeren, og samtidig kan det forenkle navigasjonen på nettstedet. I tillegg kan denne menylinjen gi brukeren 
+ønsket informasjon, som kan skape en viss tilfredshet hos de fleste brukerne.  */
+
+#meny li{
+        position:relative;
+        list-style: none;
+        float: left; 
+        height:40px;
+}
+
+
+#meny li a{                                /* Hovedlinjen*/
+        
+        padding: 20px;
+        padding: 20px;
+        margin: 20px ;
+        text-decoration: underline;
+		
+
+        border-left: 0.01px solid;
+        border-color: white;
+
+        font-family: Arial;
+        font-size: 10px;
+
+        color: white;
+}
+
+
+
+
+
+
+#meny ul{
+        position:absolute;
+        top: 3px;     
+        
+
+        opacity: 0;
+        background: #080425;
+}
+
+#meny li:hover ul{
+        opacity: 1;
+}
+
+
+#meny li:hover > ul li{
+        height: 15px;
+        overflow: visible;
+		
+}
+/*bruker høyde på 15px som er litt kort avstand, men det er nødvendig for å kunne skille mellom lag og profil. Det kan oppstå litt problemer under 
+overgangen fra lag til profil, men likevel får man det til på grunn av markeringsfeltet som er sort og er av forkjellig størrelse.*/
+#meny li:hover > a{
+        color: gray;
+}
+/*bruker samme farge som bakgrunnsfargen, slik at man klarer å se tydeligere sammenheng mellom ulike elementene på nettsiden*/
+
+#meny ul li a{
+        width: 50px;
+        padding: 4px 4px 4px 25px;
+        margin:0;
+        border: none;
+        border-bottom: 2px solid;
+		
+}
+
+
+/*Avlutter menylinjen */
+
+
+#ramme{
+        border:2px solid black;
+        border-radius:2px;
+		height:750px;
+        background: white;
+        padding:10px;
+        margin-left:160px;
+        margin-right: 20px;
+        margin-bottom:0;
+		
+		
+}
+
+footer{
+        text-align:center;
+        background:none;
+        color:black;
+		font-weight:bold;
+        
+}
+
+
+
+/*HJEMSIDEN*/
+
+    #rullevindu {
+    height:380px;
+     width: 500px;
+     overflow: hidden;
+     padding:0;
+     margin-left:-200px;
+     margin-top:20px;
+     float:right;
+    }
+
+
+    #p_rull{
+    font-family: Numan; 
+    padding:0;
+    margin:0;
+    padding-top:0;
+  }
+        /*Avslutter høyresiden */
+
+
+        
+
+
+                        /*Tabell caption*/
+						
+					#summary{
+					text-align: center;
+					color:black;
+					font-family: Arial;
+					font-size: 20px;
+					}
+					/* Bruker caption med tanke på universell utforming og for at leseren klarer å oppfatte den grunnleggende informasjonen i tabellen */
+
+                        #aside_tabell{
+                                background-color:white;
+                                height: 300px;
+                                width:450px;
+                                border:1px solid black;
+                                text-align:center;
+                                margin-bottom:6px;
+                                font-family: Times new roman;
+                                font-size: 17px;
+                        }
+
+                        #topp_linje{
+                                color: black;
+            
+                        }
+
+                        #lag{
+						 
+                                text-align:center;
+                                padding-left: 10px;
+								border-bottom: 1px solid black;
+                                color:black;
+							
+                        }
+						
+
+                        #poeng{
+                                border-bottom: 1px solid black;
+                                color:black;
+                        }
+
+                       
+
+                        #sentrert{
+                                border-bottom: 1px solid black;
+                                padding:2px;
+                                color:black;
+							
+                        }
+                        /*tabellen er avsluttet, og i utgangspunktet har jeg valgt å bruke en nøytral bakgrunnsfarge for tabellen som er hvit, 
+						slik at leseren har fokuset rettet mot informasjonen som blir formidlet. Det blir lagt større vekt på overskriftcellene i tabellen 
+                        som danner grunnlaget for de videre opplysningene, og dermed kan vi markere de med uthevet skrift.*/
+
+
+                        /*Profilviser */
+                        #profil{
+                                height:200px;
+                                width:240px;
+                                border: 1px solid blue;
+                                text-align:center;
+								font-weight:bold;
+                        }
+					/*Fremhever profilviseren ved å gi rammen en mørkere fargere, slik at brukeren klarer å identifisere innholdet i hver av de ulike
+					rammene ved hjelp av fargevalget og forskjellig størrelse*/
+					
+        /*Avslutter venstresiden*/
+.spillerBilde{
+        height: 50px;
+}
+
+/* HJEMSIDEN - SLUTT */
