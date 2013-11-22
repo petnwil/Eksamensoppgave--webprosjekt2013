@@ -167,13 +167,13 @@ footer{
                         /*Tabellen*/
 
                         #tabellOskrift{
-                        float:right;
+                        margin-left:auto;
                         border:1px solid grey;
                         background-color: grey;
                         height:30px;
                         width:348px;
                         text-align:center;
-                        margin:0;
+                        margin-bottom:1px;
                         margin-right:10px;
                         padding-top:10px;
                 }
