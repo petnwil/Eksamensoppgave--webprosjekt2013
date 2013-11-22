@@ -121,7 +121,7 @@ body{
         margin-right: auto;
         margin-bottom:0;
         width: 942px;
-        height: auto;
+        min-height: 700px;
 }
 
 footer{
