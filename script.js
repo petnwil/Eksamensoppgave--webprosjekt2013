@@ -2,7 +2,7 @@
 /*Script for rullevindu*/
 function rulle()
 {
-	$('#rullevindu p:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
+	$('#rullevindu li:first').slideUp( function() { $(this).appendTo($('#rullevindu')).slideDown(); });
 }
 setInterval(function(){ rulle()}, 5000);
 
@@ -59,18 +59,18 @@ $(document).ready(function(){
 		{
 			teller++;
 		}
-		if(teller == 9)
+		if(teller == 3)
 		{
 		$("#ramme").css("background-color","pink");
 		/*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
 		}
-		if(teller == 10)
+		if(teller == 5)
 		{
 			$("#ramme").css("background-color","yellow");
 		}
-		if(teller == 15)
+		if(teller == 10)
 		{
-			alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og ønsker dere lykke til neste sesong! :-)");
+			alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og Ã¸nsker dere lykke til neste sesong! :-)");
 		}
 	});
 });//end of ready(function)
