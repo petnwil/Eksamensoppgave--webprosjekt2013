@@ -85,17 +85,17 @@ body{
         opacity: 1;
 }
 
-#meny ul li{
-        /*height: 0;
+#meny ul li{                   /*Skjuler sub-menyen*/
+        height: 0;
         overflow: hidden;
-        padding: 0; */
+        padding: 0;
 }
 
-/*#meny li:hover > ul li{
+#meny li:hover > ul li{         /*Viser submenyen når når hover*/
         height: 40px;
         overflow: visible;
         padding: 0;
-} */
+}
 
 #meny ul li a{
         width: 50px;
@@ -139,19 +139,6 @@ footer{
 
         /*Venstreside*/
 
-        #nyhetsvindu{
-                /*border: 1px solid;
-                border-color: pink;  /*rosa for å kun se rammen under jobbing*/
-                /*padding: 5px;
-                padding-top:10px;
-                height: 480px;
-                width: 925px;
-                text-align:center;
-                margin-bottom:0;
-                margin-left:auto;
-                margin-right:auto; */
-        }
-
                                 #rullevindu {
                                         height:400px;
                                         width: 500px;
@@ -174,15 +161,22 @@ footer{
         /*Venstreside - SLUTT */
 
 
-        /*Høyre side*/        
-
-        /* Kommentert ut aside{
-                float:right;
-                margin-right:50px;
-        } */         
+        /*Høyre side*/                
 
 
                         /*Tabellen*/
+
+                        #tabellOskrift{
+                        float:right;
+                        border:1px solid grey;
+                        background-color: grey;
+                        height:30px;
+                        width:348px;
+                        text-align:center;
+                        margin:0;
+                        margin-right:10px;
+                        padding-top:10px;
+                }
 
                         #aside_tabell{
                                 background-color:#282828;
@@ -278,4 +272,8 @@ h2 {
 	text-align: center;
 	margin-bottom: 2em;
 	font-family: arial;
+}
+
+#spillerprofiler td{
+	width: 450px;
 }

@@ -1,0 +1,46 @@
+body{
+	margin-right:150px;
+	margin-left:150px;
+	border:1px solid #D2661E;
+	background-color:#D2691E;
+}
+
+section{
+	padding:25px;
+	background-color:white;
+}
+
+#bilde{
+}
+
+h2{
+	text-align:center;
+	font-family: Arial;
+	font-size:;
+}
+
+#forside{
+	text-align:center;
+	color:black;
+}
+
+#gruppemedlem{
+	text-align:left;
+	color:black;
+	margin-left:5px;
+}
+
+h3{
+	color:black;
+	margin-left:px;
+}
+
+#innFor{
+	list-style: none;
+}
+
+a{
+	text-decoration:none;
+	color:#D2661E;
+}
+
