@@ -46,7 +46,7 @@ else
 			<li> <a href="index.php?page=nyheter"> Nyheter </a></li>
 
 			<li> <a href="index.php?page=kontakt"> Kontakt </a> </li>
-
+		</ul>
 
 	</nav>
 
