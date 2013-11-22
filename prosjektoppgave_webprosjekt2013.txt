@@ -1,3 +1,5 @@
+Webside:
+http://student.cs.hioa.no/~s198761/index.php
 Forprosjektrapport:
 http://student.cs.hioa.no/~s198761/prosjekt/forprosjekt.html
 kravspesifikasjon:
