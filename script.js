@@ -23,6 +23,7 @@ $(document).ready(function(){
 			});
 		});
 	});
+
 	/*kode for knapper*/
 	$(".spiller").append("<button>vis mer</button><button class='mindre'>vis mindre</button>");
 	$(".nyhet").append("<button>vis mer</button><button class='mindre'>vis mindre</button>");
@@ -52,24 +53,34 @@ $(document).ready(function(){
 		}//end of else
 	});//end of click(function)
 
+	//kode for tabeller
+	var rad;
+	var antall = $("#aside_tabell tr").length;
+	for(var i = 0; i < antall; i+=2)
+	{
+		rad = "#aside_tabell tr:nth-child(" + i + ")";
+		$(rad).css({
+			"background-color":"#bbb"
+		});
+	};
+
 	/*Sript for Easteregg */
-        teller="0";
-        $("#header_bilde").mouseover(function(){
-                {
-                        teller++;
-                }
-                if(teller == 9)
-                {
-                $("#ramme").css("background-color","pink");
-                /*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
-                }
-                if(teller == 10)
-                {
-                        $("#ramme").css("background-color","yellow");
-                }
-                if(teller == 15)
-                {
-                        alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og ønsker dere lykke til neste sesong! :-)");
-                }
-        });
+	teller="0";
+	$("#header_bilde").mouseover(function(){
+		teller++;
+
+		if(teller == 9)
+		{
+			$("#ramme").css("background-color","pink");
+			/*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
+		}
+		if(teller == 10)
+		{
+			$("#ramme").css("background-color","yellow");
+		}
+		if(teller == 15)
+		{
+			alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og Ã¸nsker dere lykke til neste sesong! :-)");
+		}
+	});
 });//end of ready(function)
