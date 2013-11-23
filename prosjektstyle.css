@@ -1,8 +1,8 @@
 body{
 	margin-right:150px;
 	margin-left:150px;
-	border:1px solid #D2661E;
-	background-color:#D2691E;
+	border:1px solid #282828 ;
+	background-color:#282828 ;
 }
 
 section{
@@ -11,12 +11,13 @@ section{
 }
 
 #bilde{
+	margin:0;
+	width:900px;
 }
 
 h2{
 	text-align:center;
 	font-family: Arial;
-	font-size:;
 }
 
 #forside{
@@ -41,6 +42,6 @@ h3{
 
 a{
 	text-decoration:none;
-	color:#D2661E;
+	color:red ;
 }
 
