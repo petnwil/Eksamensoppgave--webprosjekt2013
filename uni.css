@@ -1,0 +1,182 @@
+/*Lager et stilark som skal ta utgangspunkt i universell utforming  */
+
+body{
+        background-color: gray;
+}
+
+/*HEADER*/
+#header{
+	height:240px;
+	width:auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*MENYEN*/
+#meny{
+	background-color: #0066CC;
+	box-shadow: 6px 6px 6px black;
+	width: 100px;
+	height: 220px;
+	border-radius: 20px;
+	float: left;
+	margin-top: 6px;
+}
+
+#meny li a{
+	font-family: Arial;
+	font-size: 17px;
+	color: white;
+}
+/*Slutt menyen*/
+
+#ramme{
+	border:2px solid black;
+	border-radius:2px;
+	height:auto;
+	background: white;
+	padding:10px;
+	margin-top: 80px;
+	margin-left:160px;
+	margin-right: auto;
+	min-width: 512px;
+}
+footer{
+	text-align:center;
+	background:none;
+	color:black;
+	font-weight:bold;
+}
+
+/*HJEMSIDEN*/
+#nyhetover{
+	margin-left: auto;
+	margin-right: 400px;
+	width: 100px;
+}
+
+#rullevindu {
+	height:400px;
+	width: 500px;
+	overflow: hidden;
+	margin-top:0px;
+	float: right;
+}
+
+.p_rull{
+	font-family: Numan; 
+	padding:0;
+	margin:0;
+	list-style: none;
+}
+/*Avslutter høyresiden */
+
+/*Tabell*/
+#tabellOskrift{
+	width:450px;
+	float: left;
+}
+#summary{
+	text-align: center;
+	color:black;
+	font-family: Arial;
+	font-size: 20px;
+}
+#aside_tabell{
+	background-color:white;
+	height: 300px;
+	width: 450px;
+	border: 1px solid black;
+	text-align: center;
+	margin-bottom: 6px;
+	font-family: Times new roman;
+	font-size: 17px;
+}
+#topp_linje{
+	color: black;
+}
+#lag{
+	text-align: center;
+	padding-left: 10px;
+	border-bottom: 1px solid black;
+	color: black;
+}
+#poeng{
+	border-bottom: 1px solid black;
+	color:black;
+}
+
+
+
+#sentrert{
+border-bottom: 1px solid black;
+padding:2px;
+color:black;
+
+}
+/*Slutt tabell*/
+
+/*Profilviser */
+#profil{
+	height:200px;
+	width:345px;
+	border: 1px solid blue;
+}
+/*Avslutter venstresiden*/
+
+.spillerBilde{
+	height: 50px;
+}
+
+/* HJEMSIDEN - SLUTT */
+
+#spillerprofiler td{
+	width: 450px;
+}
+
+/*Madia side*/
+#galleri{
+	height: 700px;
+}
+.bildegalleri img{
+	padding: 1px;
+	width: auto;
+	height: auto;
+	max-width: 200px;
+	max-height: 150px;
+	background-color: #111;
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.bildegalleri{
+	height: 180px;
+	float: left;
+	margin: 10px;
+}
+
+/* KONTAKTSIDE*/
+section {
+	font-family: arial;
+}
+
+.styret {
+	border: 1px solid black;
+	margin: 1em;
+	margin-left: 30em;
+	padding: 1em;
+}
+
+.styret img{
+	margin: 1em;
+	height: 150px;
+	float: left;
+}
+
+form{
+	float: left;
+	padding: 3em;
+	border: 1px solid black;
+	padding-right: 10em;
+	background-color: #E0E0E0;
+}
+/*SLUTT KONTAKTSIDE*/
