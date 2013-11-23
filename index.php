@@ -7,103 +7,101 @@ else
 
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Hjemmeside</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" title="styleen" href="style.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
-	</script>
-	<script src="./script.js">
-	</script>
+	<head>
+		<title>Hjemmeside</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" title="styleen" href="./style.css">
+		<link rel="alternate stylesheet" type="text/css" title="styletre" href="./uni.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
+		</script>
+		<script src="./script.js">
+		</script>
 
-</head>
+	</head>
 
-<body>
+	<body>
+		<header id="header">
+			<img id="header_bilde" src="sbioheader.jpg" alt="Logo" title="Logo">
+			<nav>
+				<ul id="meny">
+					<li> <a href="index.php?page=hjem"> Hjem </a> </li>
 
-	<header id="header">
-		<img id="header_bilde" src="sbioheader.jpg" alt="Logo" title="Logo">
+					<li> <a href="index.php?page=lagstart"> Lag </a>
+					<ul>
+						<li> <a href="index.php?page=herrelag"> Herre </a> </li>
+						<li> <a href="index.php?page=damelag"> Dame </a> </li>
+					</ul>
+					</li>
 
-	<nav>
-		<ul id="meny">
-			<li> <a href="index.php?page=hjem"> Hjem </a> </li>
+					<li> <a href="index.php?page=profilerstart"> Profiler </a>
+					<ul>
+						<li> <a href="index.php?page=profiler"> Herre </a> </li>
+						<li> <a href="index.php?page=profilerdamelag"> Dame </a> </li>
+					</ul>
+					</li>
 
-			<li> <a href="index.php?page=lagstart"> Lag </a>
-			<ul>
-				<li> <a href="index.php?page=herrelag"> Herre </a> </li>
-				<li> <a href="index.php?page=damelag"> Dame </a> </li>
-			</ul>
-			</li>
+					<li> <a href="index.php?page=media"> Media </a></li>
 
-			<li> <a href="index.php?page=profilerstart"> Profiler </a>
-			<ul>
-				<li> <a href="index.php?page=profiler"> Herre </a> </li>
-				<li> <a href="index.php?page=profilerdamelag"> Dame </a> </li>
-			</ul>
-			</li>
+					<li> <a href="index.php?page=nyheter"> Nyheter </a></li>
 
-			<li> <a href="index.php?page=media"> Media </a></li>
+					<li> <a href="index.php?page=kontakt"> Kontakt </a> </li>
+				</ul>
+			</nav>
+		</header>
 
-			<li> <a href="index.php?page=nyheter"> Nyheter </a></li>
+		<section id="ramme">
+			<?php
+			switch($page){
 
-			<li> <a href="index.php?page=kontakt"> Kontakt </a> </li>
-		</ul>
+				case "herrelag";
+				include('herrelag.html');
+				break;
 
-	</nav>
+				case "damelag";
+				include('damelag.html');
+				break;
 
-</header>
-<section id="ramme">
-	<?php
-	switch($page){
+				case "nyheter";
+				include('nyheter.html');
+				break;
 
-		case "herrelag";
-		include('herrelag.html');
-		break;
+				case "profiler":
+				include('profiler.html');
+				break;
 
-		case "damelag";
-		include('damelag.html');
-		break;
+				case "profilerstart":
+				include('profilstart.html');
+				break;
 
-		case "nyheter";
-		include('nyheter.html');
-		break;
+				case "lagstart":
+				include('lagstart.html');
+				break;
 
-		case "profiler":
-		include('profiler.html');
-		break;
+				case "profilerdamelag":
+				include('profilerdame.html');
+				break;
 
-		case "profilerstart":
-		include('profilstart.html');
-		break;
+				case "kontakt":
+				include('kontaktskjema.html');
+				break;
 
-		case "lagstart":
-		include('lagstart.html');
-		break;
+				case "media";
+				include('media.html');
+				break;
 
-		case "profilerdamelag":
-		include('profilerdame.html');
-		break;
+				case "henvendelse";
+				include('web_hen.html');
+				break;
 
-		case "kontakt":
-		include('kontaktskjema.html');
-		break;
+				default: include('hjem.html');
+				break;
+			}
+			?>
+		</section>
 
-		case "media";
-		include('media.html');
-		break;
-
-		case "henvendelse";
-		include('web_hen.html');
-		break;
-
-		default: include('hjem.html');
-		break;
-	}
-	?>
-</section>
-<footer>
-	<p> Tasmia Faruque - Magnus Tønsager - Mimi Wikant - Peter Wilhelmsen </p>
-	<p> Gruppe 41 </p>
-</footer>
-
-</body>
+		<footer>
+			<p> Tasmia Faruque - Magnus Tønsager - Mimi Wikant - Peter Wilhelmsen </p>
+			<p> Gruppe 41 </p>
+		</footer>
+	</body>
 </html>
