@@ -71,12 +71,8 @@ $(document).ready(function(){
 
 		if(teller == 9)
 		{
-			$("#ramme").css("background-color","pink");
+			$("#ramme").css("background-color","blue");
 			/*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
-		}
-		if(teller == 10)
-		{
-			$("#ramme").css("background-color","yellow");
 		}
 		if(teller == 15)
 		{
