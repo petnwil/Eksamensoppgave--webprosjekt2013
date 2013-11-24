@@ -1,588 +1,582 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title> Prosjekrapport </title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" title="Style" href="prosjektstyle.css">
-</head>
+	<head>
+		<title> Prosjekrapport </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" title="Style" href="prosjektstyle.css">
+	</head>
 
-<body>
-<section>
-	<h2> Prosjektrapport </h2>
-<br>
-	<p> Webprosjekt H2013 - HIOA </p>
+	<body>
+		<section>
+			<h2> Prosjektrapport </h2>
+			<br>
+			<p> Webprosjekt H2013 - HIOA </p>
+			<img id="bilde" src="./bilder/sbioheader.jpg" title="Forsidebilde" alt="Forsidebilde">
+			<br>
+			<h3> Gruppe 41 </h3>
+			<br>
+			<br>
+			<h3 id="gruppemedlem">
+				Magnus Tønsager - s <br>
+				Mimi Løland Wikant - s <br>
+				Tasmia Faruque - s <br>
+				Peter Wilhelmsen - s
+			</h3>
+			<br>
+		</section>
 
-	<img id="bilde" src="sbioheader.jpg" title="Forsidebilde" alt="Forsidebilde">
-	<br>
-	<h3> Gruppe 41 </h3>
-	<br>
-	<br>
-	<h3 id="gruppemedlem"> 
-		Magnus Tønsager - s <br>
-		Mimi Løland Wikant - s <br>
-		Tasmia Faruque - s <br>
-		Peter Wilhelmsen - s </h3>
-	<br>
-</section>
-
-<br>
-
-<section id="innholdfortegnelse">
-	<h3> Innholdsfortegnelse </h3>
-	<ul id="innFor">
-		<li> 1.0 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Oppgavetekst"> Oppgavetekst </a> </li>
-		<li> 1.1 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Gruppeinndeling"> Gruppeinndeling </a> </li>
-		<li> 1.2 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Tema"> Tema </a> </li>
-		<li> 1.3 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Publisering"> Publisering </a> </li>
-		<li> 1.4 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Forprosjektrapport"> Forprosjektrapport </a> </li>
-		<li> 1.5 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Kravspesifikasjon"> Kravspesifikasjon </a> </li> 
-		<li> 2.0 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Tidslinje"> Tidslinje </a> </li>
-		<li> 2.1 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Uke1"> Uke 1 </a> </li>
-		<li> 2.1.1&nbsp;&nbsp; <a href="#">Arbeid frem mot første frist </a> </li>
-		<li> 2.2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Uke2">Uke 2 </a> </li>
-		<li> 2.2.1 	&nbsp;&nbsp;<a href="#Andregruppemote">Andre gruppemøte </a> </li>
-		<li> 2.2.2 	&nbsp;&nbsp;<a href="#Github">Aktivitet på Github </a> </li>
-		<li> 2.2.3 	&nbsp;&nbsp;<a href="#OppUke2">Oppsummering av uka </a> </li>
-		<li> 2.3 	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Uke3">Uke 3 </a> </li>
-		<li> 2.3.1 	&nbsp;&nbsp;<a href="#TreForste">Ukas tre første dager </a> </li>
-		<li> 2.3.2 	&nbsp;&nbsp;<a href="#Arbeidsokt">Første ordentlige arbeidsøkt sammen </a> </li>
-		<li> 2.3.4 	&nbsp;&nbsp;<a href="#OppUke3">Oppsummering av uka </a> </li>
-		<li> 2.4 	&nbsp;&nbsp;&nbsp;&nbsp; <a href="#Uke4">Uke 4 </a></li>
-		<li> 2.4.1 	&nbsp;&nbsp;<a href="#Finaleuka">"Finaleuka" i gang </a> </li>
-		<li> 2.4.2 	&nbsp;&nbsp;<a href="#FemDager">Onsdag, fem dager igjen </a> </li>
-		<li> 2.4.3 	&nbsp;&nbsp;<a href="#OnsKveld">Oppdatering onsdag kveld </a> </li>
-		<li> 2.4.4 	&nbsp;&nbsp;<a href="#Torsdag">Torsdag </a> </li>
-		<li> 2.4.5&nbsp;&nbsp;&nbsp;<a href="#Siste">Siste møte </a> </li>
-		<li> 2.4.6&nbsp;&nbsp;&nbsp;<a href="#OppUke4">Oppsummering av uka </a> </li>
-		<li> 3.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Imple">Implementeringsoversikt </a> </li>
-		<li> 4.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Evaluering">Evaluering </a> </li>
-		<li> 4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Metoder">Metoder </a> </li>
-		<li> 4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Verktoy">Verktøy </a> </li>
-		<li> 4.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Teknologier">Teknologier </a> </li>
-		<li> 4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Tidsbruk">Hva fungerte og tidsbruk </a> </li>
-		<li> 4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Kilder">Kilder </a> </li>
-		<li> 5.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Refleksjon">Refleksjon rundt prosjektgjennomføringen</a> </li>
-	</ul>
-</section>
-<br>
-
-<section>
-	<h3 id="Oppgavetekst"> 1.0 Oppgavetekst </h3>
-	<p>
-		Oppgaven var å lage en webside vi syntes virket interessant å lage. Tema og innhold for siden var valgfritt, men skulle interessere alle gruppemedlemmene. Gruppenene ble så langt som mulig delt inn i interesser etter ønske fra studentene.
-	</p>
-	
-	<p> 
-		Det var to teknologier som var påkrevd og viktigst skulle fungere 100%: <br>
-		- HTML 5 <br>
-		- CSS 3 <br>
 		<br>
-		I tillegg måtte vi ha med minst én av følgende teknologier: <br>
-		- Javascript <br>
-		- PHP </p>
 
-	<div>
-		 Alt skulle lages mer eller mindre fra bunnen av, men noen utvalgte rammeverk var tillatt. Rammeverk og teknologier som var lov og ikke lov ble lagt ut i lister på Github for studentene.
-		<br>
-		<br>
-		Oppgaven bestod av tre deler:
-		<ol>
-		<li> Forprosjektrapport - Innleveringsfrist 30.10.13</li>
-		<li> Webside - Innleveringsfrist 24.11.13</li>
-		<li> Prosjektrapport - Innleveringsfrist 24.11.13</li>
-		</ol>
-		Oppgaveteksten kan leses i sin helhet <a href="https://github.com/hioa-cs/webprosjekt/blob/master/prosjektoppgave/prosjektoppgave.md">her</a>
-
-	</div>
-<hr>
-	<h3 id="Gruppeinndeling"> 1.1 Gruppeinndeling </h3>
-	<p> 
-		Vi fikk tildelt vår gruppe torsdag 4.oktober. Gruppen bestod opprinnelig av fem studenter, men vi ble fire. De fire var: <br>
-		- Magnus Tønsager <br>
-		- Mimi Løland Wikant <br>
-		- Tasmia Faruque <br>
-		- Peter Wilhelmsen
-	</p>
-	<p> 
-		Ingen kjente hverandre fra før, noe som ville gjøre oppgaven til en god utfordring. 
-		Peter sendte 25.oktober ut en felles mail til alle sammen. Her delte han kontaktinformasjon og ga beskjed om at han kunne opprette en gruppe på Facebook for å sleppe å holde kontakten over mail.<br>
-		Mandag 28.oktober møttes gruppa for første gang. Etter en kjapp hilserunde var vi i gang med å diskutere tema for websiden.<br>
-		Peter ble prosjektleder.
-	</p>
-<hr>
-	<h3 id="Tema"> 1.2 Tema </h3>
-	<p>
-		Alle på gruppen hadde en eller annen interesse for sport og vi peilet oss fort inn på at vi ønsket at oppgaven skulle ha et sportstema. Det var ingen som hadde spesielle ønsker, men vi kom inn på ideen om å lage en sportsnettavis som skulle følge norsk sport og store norske utøvere i utlandet.
-	</p>
-	<p>
-		Tanken var å samle artikler fra andre sportsider, slik at vår side skulle være den eneste siden en sportsinteressert skulle trenge å klikke seg inn på for å holde seg oppdatert på det siste innen sport.
-	</p>
-	<p>
-		Da vi begynte å skrive forprosjektrapporten skjønte vi at den typen side vi tenkte å lage kanskje ville bli ganske ensidig med tanke på at vi skulle hente inn artikler og nyheter andre hadde skrevet. Ideen ble kastet og vi måtte begynne å tenke på nytt.
-	</p>
-	<p>
-		Vi landet tilslutt på at vi skulle lage en webside for et idrettslage. Med det som tema følte vi at det var mye mer vi kunne gjøre med siden. Vi kunne for eksempel lage spillerprofiler, nyheter, bildegallerier og kampreferater. Dermed var det bare å begynne og skrive en ny forprosjektrapport.
-	</p>
-<hr>
-	<h3 id="Publisering"> 1.3 Publisering </h3>
-	<p>
-		Vi har valgt å legge prosjektoppgaven på Magnus sitt hjemmeområde. Link og mulig kopier av hele prosjekt vil ligge på de andres hjemmeområde.
-	</p>
-<hr>
-	<h3 id="Forprosjektrapport"> 1.4 Forprosjektrapport </h3>
-	<p>
-		Første forprosjekrapport ble opprettet 28.oktober, men som nevnt over i 1.2 Tema måtte vi begynne på en ny rapport da vi skjønte at vår første idé kanskje ville bli kjedligere å arbeide med. Da vi møttes dagen etter gjorde vi om utkastet til å omhandle vår endelig idé.<br>
-	</p>
-	
-	<br>
-
-	<h4> Under følger deler av vår forprosjektrapport </h4>
-	<div>
-		Dette er forprosjektrapporten til gruppe 41, bestående av:
-		<ul>
-			<li> Magnus Tønsager - s198761 </li>
-			<li> Mimi Wikant - s198547 </li>
-			<li> Tasmia Faruque - s198606 </li>
-			<li> Peter Wilhelmsen - s198610 </li>
-		</ul>
-		<br>
-		Vi var opprinnelig en person til på gruppen, men fikk ikke svar på henvendelser. Anser ikke denne personen som medlem av gruppen.Sendte mail til Alfred angående dette.
-	</div>
-	<h4> Arbeidsmetode </h4>
-	<p>
-		Som arbeidsmetode velger vi prototyping. Tanken bak er at vi får siden opp og gå så kjapt som mulig, for deretter å kunne bygge videre på denne. Vi mener dette blir den mest effektive arbeidsmetoden for å utvikle websiden. Vi kommer da raskt i gang med siden, og får testet ulike design og brukerfunksjoner til vi finner noe som fungerer bra. Mot slutten av prosjektperioden vil vi få testet siden på andre brukere for å få forslag til eventuelle forbedringer.
-	</p>
-	<h4> Github </h4>
-	<p>
-		Vi velger å bruke Github når vi skal jobbe med prosjektet vårt. Github er et godt verktøy for å kunne følge med på forandringer vi gjør i prosjektet underveis. I tillegg er det lett å legge inn endringer.
-		Filene og forandringene vil ligge lett tilgjengelig for alle, og ingen vil gå glipp av oppdateringer underveis.
-	</p>
-	<p> Prototype av grensesnittet </p>
-	<img src="skisse.png" title="Prototype av grensesnitt" alt="Prototype av grensesnitt">
-	<p> 
-		Forprosjektrapporten kan leses <a href="http://student.cs.hioa.no/~s198761/prosjekt/forprosjekt.html"> her </a>
-	</p>
-<hr>
-	<h3 id="Kravspesifikasjon"> 1.5 Kravspesifikasjon </h3>
-	<p>
-		Samtidig med forprosjektrapporten skulle vi levere inn en kravspesifikasjon. <br>
-	</p>
-	<p>
-		Formålet med nettsiden er å skape en hjemmeside for et idrettslag der man kan finne relevant informasjon om laget, nyheter, bilder og kontaktinformasjon. Vi vil ha med: <br>
-		- Menylinje for å navigere mellom de forskjellige undersidene.<br>
-		- Nyhetsartikler og intervjuer. <br>
-		- Spillerprofiler. <br>
-		- Søkefelt for å kunne søke på nettsiden.
-	</p>
-	<p> 
-		Undersidene skulle gi tilgang til kampresultater, informasjon om styret, historie om laget, spillerprofiler slik at brukeren kan se hvem som spiller for klubben, se bilder fra kamp/arrangementer og et kontaktskjema for å sende henvendelser til laget.<br>
-		Nettsiden skal være på norsk og støttes av de største nettleserne.
-	</p>
-</section>
-
-<br>
-
-<section>
-	<h3 id="Tidslinje"> 2.0 Tidslinje </h3>
-	<p>
-		Da vi skrev forprosjektrapporten lagde vi også en milepælsplan som viste når vi planla å arbeide med og være ferdig med de forskjellige delene websiden skulle inneholde. Vi opplevde det som vanskelig å sette et tidsperspektiv på hvor lang tid det ville ta å jobbe med de forskjellige delene fordi ingen av oss har jobbet med denne typen prosjekt før.
-	</p>
-	<p>
-		Her er milepælsplanen vår.<br>
-		<img src="mileplan.jpg" title="Milepælsplan" alt="Milepælsplan">
-	</p>
-<hr>
-	<h3 id="Uke1"> 2.1 Uke 1 28.10.13 - 03.10.13 </h3>
-	<p>
-		Første gang gruppa møttes var mandag 28.oktober. En kjapp hilserunde og en idémyldring senere hadde vi allerede fordelt de første oppgavene: <br>
-		- Peter fikk i oppgave å skrive første utkast til forprosjektrapporten ut i fra vår første idé. Utkastet skulle være klart til neste dag.
-	</p>
-	<p>
-		Vi møttes igjen onsdag 30.oktover og det var under dette møtet vi kasten idéen om sportsnettavis og peilet oss inn på å lage en hjemmeside for et idrettslag. Vi fikk samlet nye innspill og tanker til forprosjektrapporten.
-	</p>
-	<p> 
-		Skissen ble lagt ut på Github og det var nå enkelt for alle å gå inn og gjøre endringer. Siste finpuss og validering av rapporten og kravspesifikasjonen ble gjort i løpet av dagen, og på kvelden la Magnus ut filene på sitt hjemmeområde. De andre la ut link til hans område på sine hjemmeområder.
-	</p>
-	<p>
-		Vi ønsket ikke å lage en side for et fiktivt lag og Peter tok derfor kontakt med fotballaget SBIO Athletics for å høre om de kunne tenke seg å være utgangspunkt for vårt prosjekt.
-	</p>
-	<p>
-		Allerede i løpet av onsdagen begynte det å komme på plass små deler til siden. Magnus opprettet det ytre rammeverket i index.php og Peter opprettet en tabell og en funksjon for å rullerende nyheter på hovedsiden vår.I tillegg kom det positivt svar fra fotballaget, de ville være med! Laget fikk tilsendt et skjema for å gi informasjon om hver spiller slik at vi kunne opprette profiler på hver enkelt.
-	</p>
-	<p> Gruppen hadde ikke mer tid til å møtes denne uka.</p>
-
-<hr>
-
-	<h3 id="Uke2"> 2.2 Uke 2 04.11.13 - 10.11.13 </h3>
-	<h3 id="Andregruppemote"> 2.2.1 Andre gruppemøte 06.11.13 </h3>
-	<p>
-		Andre gruppemøte ble onsdag 6.november. Fra forrige møte hadde det blitt jobbet bra og flere sider var opprettet: <br>
-		- Underside for spillerprofiler <br>
-		- En underside for nyheter <br>
-		- PHP Include lagt inn i index.php
-	</p>
-	<div>
-		Ny arbeidsoppgaver ble delegert i dag: <br>
-		<ul>
-			<li> Magnus fortsetter med spillerprofil-siden. Har allerede begynt å få inn skjema fra spillerne </li>
-			<li> Mimi skal lage et kontakskjema som skal ligge på en underside. Meningen er at brukeren skal kunne ta kontakt med laget på generelt grunnlag og ikke måtte ta personlig kontakt med styret. Hun skal også sjekke opp hvordan det funker med søkefunksjon på siden</li>
-			<li> Tasmia skal opprette en mal slik at vi lett kan legge inn intervjuer, referater og lignende på nyhetsundersiden. Hun skal også legge inn "les mer"-knapp.</li>
-			<li> Peter skal lage en menylinje og jobbe med utformingen av hovedsiden (hjem.html). </li>
-		</ul>
-	</div>
-
-	<p>
-		Den universelle utformingen kom i fokus i dag og vi er enige om at html-strukturen skal være godt bygget opp. For slik vi oppfattet det på vår gjesteforeleser som var blind, var det viktig at oppbyggingen av siden var gjort ordentlig slik at det ble mulig for dem å navigere seg gjennom siden med sine hjelpeverktøy.<br>
-		<br>
-		Foreløpig klarer vi oss med å møtes en gang i uka, men dersom vi trenger hjelp/innspill tar vi fortløpende kontakt med de andre om å møtes.
-	</p>
-
-<hr>
-
-	<h3 id="Github"> 2.2.2 Aktivitet på Github </h3>
-
-	<div>
-		Ut uka har det vært mye aktivitet på Github:
-		<ul>
-			<li> Script for knapper er lagt ut. </li>
-			<li> Spillerprofiler er lagt til. </li>
-			<li> Hovedmenylinjen er laget. </li>
-			<li> Et stil-ark er opprettet og linket til index.php. </li>
-			<li> Filen hjem.html som utgjør hovedsiden er laget. Script og CSS er inkludert i filen. </li>
-		</ul>
-	</div>
-
-<hr>
-
-	<h3 id="OppUke2"> 2.2.3 Oppsummering av uka </h3>
-	<p>
-		En god uke der vi fikk på plass mye av den ytre strukturen på siden vår og vi fikk testet at inkluderingen av de forskjellige undersidene funket.
-	</p>
-	<p>
-		Vi har enda ikke bestemt oss for et tema for layout på siden, men vi er enige om at vi ser nærmere på dette neste uke når de forskjellige undersidene er oppe og går for fullt. Da er det lettere å få oversikt og kunne se for oss hvordan vi ønsker fargebruken skal være.
-	</p>
-	<p>
-		Tanken om å involere jentelaget til SBIO Athletics har vært oppe for diskusjon. Om jentelaget vil bidra vil det gi mer innhold og variasjon på siden. Det blir bestemt at vi tar kontakt med dem for å høre om det er noe de kunne tenke seg å være en del av.
-	</p>
-	<p>
-		Samtidig som vi jobber med oppgaven har alle sammen andre innleveringsoppgaver. Tiden går fort og vi ser at vi kanskje må stramme inn på tidsfristene vi setter til hverandre. Ting må på plass selv om kveldene blir lange. Plutselig er leveringsfristen her og hvem vet hvilke problemer som kan dukke opp på et senere tidspunkt.
-	</p>
-
-<hr>
-
-	<h3 id="Uke3"> 2.3 Uke 3 11.11.13 - 17.11.13 </h3>
-	<h3 id="TreForste"> 2.3.1 Ukas tre første dager </h3>
-
-	<div>
-		I løpet av ukas tre første dager har flere ting begynt å falle på plass:
-		<ul>
-			<li> Hovedsiden med delvis CSS og script gir oss en viss pekepinn på hvordan layout´en vil se ut. </li>
-			<li> Menyen er blitt inkludert i index.php. </li>
-			<li> Stadig flere spillerprofiler blir klare. </li>
-			<li> Kontakskjemaet nesten klart. </li>
-		</ul>
-	</div>
-
-	<p>
-		Onsdag 13.november møttes vi for en oppsummering og fordeling av nye oppgaver. For å få mer spennende innhold på siden bestemmer vi oss for å lage et intervju til styreleder for SBIO Fotball og et intervju til en spiller. Tasmia påtar seg oppgaven å skrive intervjuene.
-	</p>
-	<p> 
-		Mimi, som vår PHP-ekspert, skal inkludere alle undersider og kontaktskjema slik at dette ligger på sine plasser og fungerer slik vi ønsker.
-	</p>
-	<p>
-		Magnus jobber videre med profilene og tar en titt på problemet angående flyten av elementer på hovedsiden.
-	</p>
-	<p>
-		Peter begynner å skrive på prosjektrapporten og tar kontakt med laget og hører om det er flere som vil stille med informasjon til profiler. Han skal også få tak i informasjon om styret for å kunne legge dette ut på kontaktsiden.
-	</p>
-	<p>
-		Vi er samtidig oppmerksom på at easteregg-delen har falt litt utenfor. Alle blir bedt om å sette i gang sine kreative hjerneceller for å komme på et morsomt "påskeegg".
-	</p>
-
-<hr>
-
-	<h3 id="Arbeidsokt"> 2.3.2 Første ordentlige arbeidsøkt sammen </h3>
-	<div>
-		Torsdag 14.november fikk vi det endelig til å klaffe, vi hadde vår første arbeidsøkt sammen på datatorget i P35. Vi startet med en liten idémyldring og oppsummering av hva som var gjort og hva som måtte prioriteres.
-		<ul>
-			<li> Alle undersidene ligger klar og ferdig kodet til utfylling av innhold. </li>
-			<li> Kontaktskjemaet er inkludert i undersiden "Kontakt". </li>
-			<li> Spillerprofiler er fullført. </li>
-			<li> Jentelaget svarer på henvendelsen og lagleder er positiv til idéen. Hun skal høre med resten av laget. </li>
-			<li> Intervjuene er ferdigskrevet og sendt ut. </li>
-		</ul>
-	</div>
-
-	<p>
-		Gjennom arbeidsøkten fikk vi inkludert og sjekket at alle undersidene funket som de skulle.<br>
-		Det finnes enkelte småproblemer utseendemessig på de forskjellige undersidene, men den personen som har jobbet med den siden det gjelder tar for seg problemet.<br>
-		Og i løpet av helga vil all CSS bli samlet i en fil.
-	</p>
-
-<hr>
-
-	<h3 id="OppUke3"> 2.3.4 Oppsummering av uka </h3>
-	<p>
-		Denne uka fikk vi for første gang se hvordan websiden ville bli med alle undersider inkludert. Et godt steg i riktig retning. Vi ser at det fortsatt venter mye jobb, men gjengen er forberedet på at det blir en knallhard siste uke.
-	</p>
-	<p>
-		Vår første skikkelig arbeidsøkt sammen fungerte bra. Selv om vi har hatt god kommunikasjon og har møttes flere ganger i uken tidligere var det veldig OK å ha en slik type arbeidsøkt sammen.
-	</p>
-	<p>
-		Gjennom helga fikk vi samlet CSS´en i en fil og Runar fra SBIO leverte et glimrende intervju som vil "krydre" siden vår bra. I tillegg sendte han oss noen bilder som vi kan opprette et bildegalleri av.<br>
-		<br>
-		Neste møte er mandag.<br>
-	</p>
-	<p> Vi konkluderer i en god uke og et steg nærmere mål! </p>
-
-<hr>
-
-	<h3 id="Uke4"> 2.4 Uke 4 18.11.13-24.11.13 </h3>
-	<h3 id="Finaleuka"> 2.4.1 "Finaleuka" i gang 18.11.13 </h3>
-	<div>
-		Møttes mandags morgen 18.november for å legge slagplanen for innspurten mot leveringsfrist.<br>
-		<br>
-		Hva må gjøres:
-		<ul>
-			<li> Intervju legges inn på nyheter. </li>
-			<li> Refresh-funksjon for å vise forskjellige innhold i et felt på forsiden. </li>
-			<li> Starte på et stil-ark nummer to med fokus på universell utforming. </li>
-			<li> Linker i vårt rullerende nyhetsvindu på forsiden. </li>
-			<li> Om sider ikke er validert må det sjekkes og godkjennes. </li>
-			<li> Fortsatt problem med flyten av elementer på hovedsiden.</li>
-			<li> Bakgrunnsbilde i header må redigeres. </li>
-		</ul>
-	</div>
-	<p>
-		Oppgavene tok vi på strak arm der vi satt. En tre timers arbeidsøkt gikk fort og vi fikk løst mange av småproblemene med hjelp av hverandre. Teamwork!<br>
-		Kontaktskjemaet fungerer og sender henvendelsen til mailadressen vi har lagt inn.<br>
-		Mer og mer CSS faller på plass og Tasmia har begynt arbeidet med stil-arket som har mer fokus på universell utforming.<br>
-		<br>
-		Mot slutten av uka må vi sette av tid til evaluering av arbeidsmetode, teknologier og hvordan arbeidet har fungert i gruppen.
-	</p>
-
-<hr>
-
-	<h3 id="FemDager"> 2.4.2 Onsdag, fem dager igjen </h3>
-	<p>
-		Nest siste arbeidsøkt ble holdt i dag. Merker at gruppa har blitt bedre kjent siden starten, for nå sitter praten og humøret mye løsere!
-	</p>
-	<p>
-		Dagens gladnyhet var at jentelaget til SBIO Fotball vil bidra! Naomi Thayland som er leder for laget har lovet at informasjonen fra hver spiller skal komme i løpet av kvelden. Vi venter i spenning! Hun har også sagt ja til å stille opp på samme intervju som leder for guttelaget svarte på. Vi er kjempetakknemlige da vi synes disse intervjuene gjør siden vår mye mer innholdsrik.
-	</p>
-	<p>
-		Stil-ark nummer to begynner å ta form, samtidig som hoved-CSS blir bedre og bedre. <br>
-		Magnus løste problemet med plassering av elementene på hovedsiden og ordnet slik at elementene flyter vår vindus-størrelsen justeres.<br>
-		Mimi har oppdatert CSS rundt kontaktskjemaet og jobber nå med bildene m/link som skal rulle på hovedsiden. 3 av bildene ble ferdige under arbeidsøkten.<br>
-		Peter har skrevet ferdig rapporten så langt som det går, og har startet med å skrive den inn som HTML.
-	</p>
-	<div>
-		Før vi pakket sammen for dagen fordelte vi de gjenstående oppgavene til fredag:
-		<ul>
-			<li> Magnus går over CSS og sjekker at den stemmer. Når jenteprofilene kommer skal han legge dem inn på rett underside. I tillegg jobber han med refresh-funksjonen.</li>
-			<li> Mimi skal lage ferdig bildene til den rullerende seksjonen og lage til noen spillerprofilbildet som ser stilig ut. Det er disse bildene som skal dukke opp ved hjelp av refresh-funksjonen når man kommer inn på hovedsiden.</li>
-			<li> Tasmia skal gjøre ferdig stil-arket, og gir beskjed i løpet av torsdagen om hun er klar for flere oppgaver. Hun skal skrive inn intervjuet av Naomi når vi mottar det.</li>
-			<li> Peter skal lage en overskrift til tabellen og lage easter-egget. Skriver også inn informasjon om jentelaget på undersiden om dem. Må fikse problemet med hover-funksjonen i menylinjen. Sub-menyen viser selv når musa ikke "hover" over der den opprinnelig skal sette i gang funksjonen.</li>
-		</ul>
-	</div>
-
-<hr>
-
-	<h3 id="OnsKveld"> 2.4.3 Oppdatering onsdag kveld </h3>
-	<p>
-		I løpet av kvelden fikk Magnus rettet PHP-feilmeldingen ved bruk av isset(). Vi har visst om feilen, men glemt å notere oss den i rapporten tidligere. Han har laget refresh-funksjonen og den ser ut til å virka akkirat som vi har tenkt!
-	</p>
-	<p>
-		Peter har laget et forslag til easter-egg. Hva som skal brukes diskuteres fredag. Sitter muligens med en idé om å legge inn et easter-egg nummer to.
-	</p>
-	<p> 
-		Vi har mottatt spillerprofilene fra jentelaget og beskjed om at intervjuet av Naomi kommer torsdag. 
-	</p>
-
-<hr>
-
-	<h3 id="Torsdag"> 2.4.4 Torsdag </h3>
-	<p> 
-		Alle jobber individuelt i dag og gjør klart alt til fredag.<br>
-		I løpet av morgenen har Peter rettet feilen i menylinjen og rapporten begynner å ta form i HTML. I tillegg har undersiden til damelaget fått innhold og en tabell.
-	</p>
-	<div>
-		Noen CSS-problemer kan sees på siden:
-		<ul>
-			<li> Footer og header har forskjellig bredde i forhold til "rammen". Må justeres.</li>
-			<li> Skal mellomrommet mellom header - "ramme" og "ramme" - footer justeres? Kan det se bedre ut uten noe mellomrom?</li>
-			<li> Mellomrom mellom toppen av vinduet og header.</li>
-			<li> Tabellen må få annen farge.</li>
-			<li> Sjekke høyden på "ramme".</li>
-		</ul>
-		<br>
-		Andre gjøremål:
-		<ul>
-			<li> Intervju av lagleder må få en ingress.</li>
-			<li> Kampreferat fra guttelaget må legges inn.</li>
-			<li> Bildegalleri under media må opprettes.</li>
-		</ul>
-	</div>
-
-<hr>
-
-	<h3 id="Siste">2.4.5 Siste møte </h3>
-	<div>
-		Der er blitt 22.november og få dager igjen til innleveringsfrist.I dag møttes vi på datatorget for siste gang for å gjøre siste finish:
-		<ul>
-			<li> Layout og flyten på gutteprofil-siden ble ordnet.</li>
-			<li> Jenteprofilene ble lagt inn og fungerte som de skal.</li>
-			<li> Kampreferatet fra guttematchen ble lagt inn under nyheter.</li>
-			<li> Alle sidene ble rettet og validert. De er nå godkjent.</li>
-			<li> Navn og bilde av laglederne og styreleder ble lagt inn på kontakt-undersiden.</li>
-		</ul>
-	</div>
-
-	<div>
-		Vi fikk ikke gjort absolutt alt vi skulle før folk måtte dra, så de små gjenstående oppgavene fordelte vi:
-		<ul>
-			<li> Magnus ser over CSS´en og skifter stil på tabellene til noe som ser bedre ut.</li>
-			<li> Mimi skal gjøre ferdig spillerprofilbilder som skal ligge i refresg-funksjonen på hovedsiden.</li>
-			<li> Tasmia skal legge inn de to siste intervjuene når vi får dem tilsendt i løpet av kvelden eller lørdag.</li>
-			<li> Peter tar en siste titt på easter-egget og fullfører prosjektrapporten.</li>
-		</ul>
-		Disse oppgavene skal hver enkelt jobbe med hjemme og gjøre ferdig i løpet av lørdag. Greit å ha en dag buffer i tilfelle noe teknisk skjærer seg når det skal leveres inn.<br>
-		<br>
-		Som siste felles oppgave tok vi en evaluering av metodebruk, verktøy og teknologier, og reflekterte rundt gjennomføringen av prosjektet.
-	</div>
-
-<hr>
-
-	<h3 id="OppUke4">2.4.6 Oppsummering av uka </h3>
-	<p>
-		Siste uka gikk utrolig fort! Det føltes som tiden ikke kom til å strekke til, men etter hvert som bitene falt på plass én etter én skjønte vi at det kom til å gå bra. Det var en lettelse å endelig se en webside som fungerte med alle de delene vi har laget hver for oss.<br>
-		<br>
-		Det at vi fikk tre arbeidsøkter i lag gjorde susen. Vi hadde godt utbytte av dem og kom frem til de tingene vi lurte på eller va usikre på.<br>
-		<br>
-		Selv om ikke alt falt fullstendig på plass da vi møttes for siste gang på fredag føler vi oss trygge på at de små bitene som gjenstår blir ferdigstilt i løpet av lørdagen. De største filene er lastet opp på hjemmeområdet til Magnus, så det er kun små endringer som må legges inn.<br>
-		<br>
-		Søndags ettermiddag var de aller siste bildene og endringene på plass! <br>
-		<br> 
-		God innsats gjennom "finaleuka" og det er en gjeng som er spent på tilbakemeldinger på produktet!
-	</p>
-</section>
-
-<br>
-
-<section>
-	<h3 id="Imple"> 3.0 Implementeringsoversikt </h3>
-	<div>
-		Da vi skrev forprosjektrapporten lagde vi en Use case - en liste over hva brukeren kunne gjøre på siden. Her kommer en gjennomgang av hva vi endte opp med å implementere på siden vår sett i sammenheng med forprosjektrapporten.
-		<ul>
-			<li>Klikke seg inn på spillerprofiler<br>
-				Dette har vi lagt inn. Vi hadde egentlig bare tenkt å ha et lag og et sett med profiler, men når vi fikk med jentelaget ble det to sider med profiler. Du får oppgitt litt informasjon om hver spiller samtidig som bildet som tilhører spilleren forstørrer seg når du klikker på "les mer"-knappen.</li>
-			<li>Lese historien bak klubben.<br>
-				Det er laget to undersider som forteller kort om de tre forskjellige lagene SBIO Fotball består av. En side for herrer og en for damer.</li>
-			<li>Se bilder/video/media.<br>
-				Dette har blitt en media-underside. Her har vi nok tenkt oss mer ennhold enn vi klarte å få tak i. Siden består av et enkelt bildegalleri med 9-12 bilder.</li>
-			<li>Kontaktinformasjon/Styreinformasjon<br>
-				En underside med kontaktskjema som er knyttet til en mailadresse ble laget. På denne undersiden la vi også inn informasjon om hvem som er styreleder og hvem som er lagledere for de tre lagene.</li>
-			<li>Intervju og artikler<br>
-				En underside vi har kalt for "nyheter" inneholder tre intervjuer og et kampreferat fra en av kampene til guttelaget. Her så vi nok for oss enda noen saker å legge til.</li>
-			<li>Easter Egg.<br>
-				I løpet av siste uka klarte vi å lage et tredelt Easter Egg.</li>
-			<li>Søkemotor.<br>
-				En ting som ikke ble med i lista på forprosjektrapporten var en søkemotor. Vi ønsket at det skulle være mulig å søke gjennom alt innhold på siden, men det viste seg at man måtte ha kunnskaper om databaser og det var det ingen av oss som hadde.</li>
+		<section id="innholdfortegnelse">
+			<h3> Innholdsfortegnelse </h3>
+			<ul id="innFor">
+				<li> 1.0 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Oppgavetekst"> Oppgavetekst </a> </li>
+				<li> 1.1 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Gruppeinndeling"> Gruppeinndeling </a> </li>
+				<li> 1.2 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Tema"> Tema </a> </li>
+				<li> 1.3 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Publisering"> Publisering </a> </li>
+				<li> 1.4 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Forprosjektrapport"> Forprosjektrapport </a> </li>
+				<li> 1.5 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Kravspesifikasjon"> Kravspesifikasjon </a> </li>
+				<li> 2.0 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Tidslinje"> Tidslinje </a> </li>
+				<li> 2.1 &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Uke1"> Uke 1 </a> </li>
+				<li> 2.1.1&nbsp;&nbsp; <a href="#">Arbeid frem mot første frist </a> </li>
+				<li> 2.2  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Uke2">Uke 2 </a> </li>
+				<li> 2.2.1         &nbsp;&nbsp;<a href="#Andregruppemote">Andre gruppemøte </a> </li>
+				<li> 2.2.2         &nbsp;&nbsp;<a href="#Github">Aktivitet på Github </a> </li>
+				<li> 2.2.3         &nbsp;&nbsp;<a href="#OppUke2">Oppsummering av uka </a> </li>
+				<li> 2.3         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Uke3">Uke 3 </a> </li>
+				<li> 2.3.1         &nbsp;&nbsp;<a href="#TreForste">Ukas tre første dager </a> </li>
+				<li> 2.3.2         &nbsp;&nbsp;<a href="#Arbeidsokt">Første ordentlige arbeidsøkt sammen </a> </li>
+				<li> 2.3.4         &nbsp;&nbsp;<a href="#OppUke3">Oppsummering av uka </a> </li>
+				<li> 2.4         &nbsp;&nbsp;&nbsp;&nbsp; <a href="#Uke4">Uke 4 </a></li>
+				<li> 2.4.1         &nbsp;&nbsp;<a href="#Finaleuka">"Finaleuka" i gang </a> </li>
+				<li> 2.4.2         &nbsp;&nbsp;<a href="#FemDager">Onsdag, fem dager igjen </a> </li>
+				<li> 2.4.3         &nbsp;&nbsp;<a href="#OnsKveld">Oppdatering onsdag kveld </a> </li>
+				<li> 2.4.4         &nbsp;&nbsp;<a href="#Torsdag">Torsdag </a> </li>
+				<li> 2.4.5&nbsp;&nbsp;&nbsp;<a href="#Siste">Siste møte </a> </li>
+				<li> 2.4.6&nbsp;&nbsp;&nbsp;<a href="#OppUke4">Oppsummering av uka </a> </li>
+				<li> 3.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Imple">Implementeringsoversikt </a> </li>
+				<li> 4.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Evaluering">Evaluering </a> </li>
+				<li> 4.1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Metoder">Metoder </a> </li>
+				<li> 4.2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Verktoy">Verktøy </a> </li>
+				<li> 4.3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Teknologier">Teknologier </a> </li>
+				<li> 4.4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Tidsbruk">Hva fungerte og tidsbruk </a> </li>
+				<li> 4.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Kilder">Kilder </a> </li>
+				<li> 5.0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="#Refleksjon">Refleksjon rundt prosjektgjennomføringen</a> </li>
 			</ul>
-		</div>
-</section>
-<br>
-<section>
-	<h3 id="Evaluering">4.0 Evaluering </h3>
-	<p>
-		Siste gang vi møttes tok vi en prat rundt prosjektgjennomføringen og under følger en evaluering av metoder, verktøy og teknologier.
-	</p>
+		</section>
 
-<hr>
-
-	<h3 id="Metoder">4.1 Metoder </h3>
-	<p>
-		Vi følte ikke at vi hadde brukt noen spesiell arbeidsmetode i dette prosjektet. I forprosjektrapporten nevnte vi prototyping som metode. Vi ville lage en fungerende side, et utkast, for så å prøve og feile oss fremover mot sluttproduktet. Sann sett har vi kanskje misforstått prototyping, det er mer et verktøy som kan inngå i en utviklingsmodell.<br>
-		Men setter vi en struktur på hvordan vi jobbet med prosjektet kan vi kalle det en slags prototype-jobbing.
-	</p>
-	<p>
-		Vi er ikke fornøyde med hvor lang tid vi brukte på å sette alle de forskjellige delene sammen til én helhet. Vi hadde lenge delferdige undersider og testet disse én og én om gangen helt frem til siste uka der vi endelig fikk skjøtt alle sidene sammen.
-	</p>
-
-<hr>
-
-	<h3 id="Verktoy">4.2 Verktøy </h3>
-	<div>
-		<ul>
-			<li>Alle har brukt forskjellige tekst-editorer, men det har ikke gitt noen problemer siden alle disse fungerer på samme måte.</li>
-			<li>GitHub har vært supert å bruke til å holde seg oppdatert på de seneste endringene. Hadde noen i gruppen gjort endringer, slapp du selv å gå inn å gjøre de fordi dette ble lagret automatisk på egen maskin.</li>
-			<li>Microsoft Project ble brukt til å lage milepælsplanen. Ikke mye å si på det programmet siden det kun ble brukt til å fremstille et Gantt-diagram. Ga i det minste et oversiktlig diagram.</li>
-			<li>Facebook ble vårt kommunikasjonsmiddel når vi ikke møttes på skolen. Gjorde det lett å få kontakt med de andre, gruppevis eller personlig. Det ble også vårt nettverk mot kontaktpersonene i SBIO Fotball. Facebook gjorde det lett å sende filer og ha korte samtaler.</li>
-			<li>Vi opprettet en mailadresse som vi fikk tilsendt spillerprofiler til og som vi knyttet opp mot kontaktskjemaet som ble laget under kontakt-undersiden.Mail er praktisk.</li>
-		</ul>
-	</div>
-
-<hr>
-
-	<h3 id="Teknologier">4.3 Teknologier</h3>
-	<div>
-		<ul>
-			<li>Nettverk/PHP var det vi opplevde som det mest tungvinte. Ingen av oss hadde kunnskaper eller følte vi hadde tid til å lære oss å sette opp/innstallere OHO for å få testet om sidene funket med PHP Include. For hver gang vi skulle teste endringer på siden måtte vi være pålogget skolenettverket. Det gjorde det tungt for oss da vi hele tiden måtte kopiere filene over til vårt hjemmeområde, for så å bruke nettadressen til vårt hjemmeområde.</li>
-			<li>JQuery/Javascript har vi fått til som vi planla å bruke. Det har vært en positiv ting å jobbe med, det har vært gøy å se de forskjellige funksjonene funke slik vi ønsket.</li>
-			<li>HTML og CSS har vært greit å jobbe med siden det er disse to teknologiene vi har hatt fokus på i Webprosjekt gjennom dette semesteret. Ingen store overraskelser, men vi har fått brynet oss på en del CSS for å få elementer til å ligge der vi ville ha dem.</li>
-		</ul>
-	</div>
-
-<hr>
-
-	<h3 id="Tidsbruk">4.4 Hva fungerte og tidsbruk </h3>
-	<p>
-		Det som tok aller mest tid for vår del var CSS´en. Det tok tid å klare å plassere elementene og skjønne seg på hva som gjorde at ting ikke ville legge seg dit vi ville.<br>
-		Stilark nummer 2 med fokus på universell utforming tok også en del tid. Det å få en god forståelse om universell utforming og hva dette innbærer. Vi har vært nøyaktige med oppbyggingsstrukturen til sidene for å holde den så ren og ryddig som mulig. Det er det som er blitt vårt hovedfokus med tanke på utformingen. Fargebruk og layout på stilark nummer 2 er tenkt å være enklere å se for folk som f.eks. har dårligere syn enn normalt.<br>
 		<br>
-		Vi har ikke noe spesielt vi følte ikke fungerte utenom at det var tungvint med testing av siden underveis pga PHP.
-	</p>
 
-<hr>
+		<section>
+			<h3 id="Oppgavetekst"> 1.0 Oppgavetekst </h3>
+			<p>
+				Oppgaven var å lage en webside vi syntes virket interessant å lage. Tema og innhold for siden var valgfritt, men skulle interessere alle gruppemedlemmene. Gruppenene ble så langt som mulig delt inn i interesser etter ønske fra studentene.
+			</p>
 
-	<h3 id="Kilder">4.5 Kilder </h3>
-	<div>
-		<ul>
-			<li> <a href="www.w3schools.com"> W3Schools </a> </li>
-			<li> <a href="www.designmodo.com.com"> Designmodo </a> </li>
-			<li> <a href="www.innsida.ntnu.no/wiki/-/wiki/Norsk/Universell+utforming+av+innhold+p%C3%A5%20nett"> innsida - NTNU </a> </li>
-			<li> Runar Alvseike, Naomi Thayalan og Bjørnar Gjerde i SBIO FOtball </li>
-		</ul>
-	</div>
-</section>
-<br>
-<section>
-	<h3 id="Refleksjon"> Refleksjon rundt prosjektgjennomføringen</h3>
-	<p>
-		Den største utfordringen var å samle informasjon å bruke. Det meste av info gikk gjennom Peter siden det var han som kjente de personene vi fikk tilsendt fra.<br>
-		Dette ble en flaskehals og ga for mye jobb til en person.Informasjonen vi har brukt er fra private personer og derfor ble det slik.
-	</p>
-	<p>
-		Selv om vi kun hadde 6 rene arbeidsøkter sammen synes vi at dette har holdt. Vi har vært flinke å gjort de oppgavene vi skulle til hver gang vi møttes og for å holde fremgangen gående. De 6 øktene har vært veldig bra og vi brukte dem godt.
-	</p>
-	<p>
-		Vi hadde ingen krangler eller store diskusjoner, alt har omtrent gått på skinner. De små diskusjonene vi har hatt har løst seg kjapt og vi ble enige om løsninger gjennom at hver person fikk komme med sine synspunkter, for så å vurdere det beste forslaget.
-	</p>
-	<p>
-		Vi er fornøyd med sluttproduktet vårt! Websiden ble som vi hadde tenkt og forestilt oss fra starten. Vi har levert det vi skrev i kravspesifikasjonen og enda litt mer med tanke på at vi fikk med oss hele SBIO Fotball.
-	</p>
-	<p>
-		Ved prosjekstart var det en gruppe som var spent med tanke på at ingen kjente hverandre fra før. Vi synes vi har fått til et bra samarbeid den perioden prosjektet har pågått!<br>
+			<p>
+				Det var to teknologier som var påkrevd og viktigst skulle fungere 100%: <br>
+				- HTML 5 <br>
+				- CSS 3 <br>
+				<br>
+				I tillegg måtte vi ha med minst én av følgende teknologier: <br>
+				- Javascript <br>
+				- PHP
+			</p>
+
+			<div>
+				Alt skulle lages mer eller mindre fra bunnen av, men noen utvalgte rammeverk var tillatt. Rammeverk og teknologier som var lov og ikke lov ble lagt ut i lister på Github for studentene.
+				<br>
+				<br>
+				Oppgaven bestod av tre deler:
+				<ol>
+					<li> Forprosjektrapport - Innleveringsfrist 30.10.13</li>
+					<li> Webside - Innleveringsfrist 24.11.13</li>
+					<li> Prosjektrapport - Innleveringsfrist 24.11.13</li>
+				</ol>
+				Oppgaveteksten kan leses i sin helhet <a href="https://github.com/hioa-cs/webprosjekt/blob/master/prosjektoppgave/prosjektoppgave.md">her</a>
+			</div>
+			<hr>
+			<h3 id="Gruppeinndeling"> 1.1 Gruppeinndeling </h3>
+			<p>
+				Vi fikk tildelt vår gruppe torsdag 4.oktober. Gruppen bestod opprinnelig av fem studenter, men vi ble fire. De fire var: <br>
+				- Magnus Tønsager <br>
+				- Mimi Løland Wikant <br>
+				- Tasmia Faruque <br>
+				- Peter Wilhelmsen
+			</p>
+			<p>
+				Ingen kjente hverandre fra før, noe som ville gjøre oppgaven til en god utfordring.
+				Peter sendte 25.oktober ut en felles mail til alle sammen. Her delte han kontaktinformasjon og ga beskjed om at han kunne opprette en gruppe på Facebook for å sleppe å holde kontakten over mail.<br>
+				Mandag 28.oktober møttes gruppa for første gang. Etter en kjapp hilserunde var vi i gang med å diskutere tema for websiden.<br>
+				Peter ble prosjektleder.
+			</p>
+			<hr>
+			<h3 id="Tema"> 1.2 Tema </h3>
+			<p>
+				Alle på gruppen hadde en eller annen interesse for sport og vi peilet oss fort inn på at vi ønsket at oppgaven skulle ha et sportstema. Det var ingen som hadde spesielle ønsker, men vi kom inn på ideen om å lage en sportsnettavis som skulle følge norsk sport og store norske utøvere i utlandet.
+			</p>
+			<p>
+				Tanken var å samle artikler fra andre sportsider, slik at vår side skulle være den eneste siden en sportsinteressert skulle trenge å klikke seg inn på for å holde seg oppdatert på det siste innen sport.
+			</p>
+			<p>
+				Da vi begynte å skrive forprosjektrapporten skjønte vi at den typen side vi tenkte å lage kanskje ville bli ganske ensidig med tanke på at vi skulle hente inn artikler og nyheter andre hadde skrevet. Ideen ble kastet og vi måtte begynne å tenke på nytt.
+			</p>
+			<p>
+				Vi landet tilslutt på at vi skulle lage en webside for et idrettslage. Med det som tema følte vi at det var mye mer vi kunne gjøre med siden. Vi kunne for eksempel lage spillerprofiler, nyheter, bildegallerier og kampreferater. Dermed var det bare å begynne og skrive en ny forprosjektrapport.
+			</p>
+			<hr>
+			<h3 id="Publisering"> 1.3 Publisering </h3>
+			<p>
+				Vi har valgt å legge prosjektoppgaven på Magnus sitt hjemmeområde. Link og mulig kopier av hele prosjekt vil ligge på de andres hjemmeområde.
+			</p>
+			<hr>
+			<h3 id="Forprosjektrapport"> 1.4 Forprosjektrapport </h3>
+			<p>
+				Første forprosjekrapport ble opprettet 28.oktober, men som nevnt over i 1.2 Tema måtte vi begynne på en ny rapport da vi skjønte at vår første idé kanskje ville bli kjedligere å arbeide med. Da vi møttes dagen etter gjorde vi om utkastet til å omhandle vår endelig idé.<br>
+			</p>
+
+			<br>
+
+			<h4> Under følger deler av vår forprosjektrapport </h4>
+			<div>
+				Dette er forprosjektrapporten til gruppe 41, bestående av:
+				<ul>
+					<li> Magnus Tønsager - s198761 </li>
+					<li> Mimi Wikant - s198547 </li>
+					<li> Tasmia Faruque - s198606 </li>
+					<li> Peter Wilhelmsen - s198610 </li>
+				</ul>
+				<br>
+				Vi var opprinnelig en person til på gruppen, men fikk ikke svar på henvendelser. Anser ikke denne personen som medlem av gruppen.Sendte mail til Alfred angående dette.
+			</div>
+			<h4> Arbeidsmetode </h4>
+			<p>
+				Som arbeidsmetode velger vi prototyping. Tanken bak er at vi får siden opp og gå så kjapt som mulig, for deretter å kunne bygge videre på denne. Vi mener dette blir den mest effektive arbeidsmetoden for å utvikle websiden. Vi kommer da raskt i gang med siden, og får testet ulike design og brukerfunksjoner til vi finner noe som fungerer bra. Mot slutten av prosjektperioden vil vi få testet siden på andre brukere for å få forslag til eventuelle forbedringer.
+			</p>
+			<h4> Github </h4>
+			<p>
+				Vi velger å bruke Github når vi skal jobbe med prosjektet vårt. Github er et godt verktøy for å kunne følge med på forandringer vi gjør i prosjektet underveis. I tillegg er det lett å legge inn endringer.
+				Filene og forandringene vil ligge lett tilgjengelig for alle, og ingen vil gå glipp av oppdateringer underveis.
+			</p>
+			<p> Prototype av grensesnittet </p>
+			<img src="./bilder/skisse.png" title="Prototype av grensesnitt" alt="Prototype av grensesnitt">
+			<p>
+				Forprosjektrapporten kan leses <a href="http://student.cs.hioa.no/~s198761/forprosjekt.html"> her </a>
+			</p>
+			<hr>
+			<h3 id="Kravspesifikasjon"> 1.5 Kravspesifikasjon </h3>
+			<p>
+				Samtidig med forprosjektrapporten skulle vi levere inn en kravspesifikasjon. <br>
+			</p>
+			<p>
+				Formålet med nettsiden er å skape en hjemmeside for et idrettslag der man kan finne relevant informasjon om laget, nyheter, bilder og kontaktinformasjon. Vi vil ha med: <br>
+				- Menylinje for å navigere mellom de forskjellige undersidene.<br>
+				- Nyhetsartikler og intervjuer. <br>
+				- Spillerprofiler. <br>
+				- Søkefelt for å kunne søke på nettsiden.
+			</p>
+			<p>
+				Undersidene skulle gi tilgang til kampresultater, informasjon om styret, historie om laget, spillerprofiler slik at brukeren kan se hvem som spiller for klubben, se bilder fra kamp/arrangementer og et kontaktskjema for å sende henvendelser til laget.<br>
+				Nettsiden skal være på norsk og støttes av de største nettleserne.
+			</p>
+		</section>
+
 		<br>
-		Takk for innsatsen alle sammen!
-	</p>
-</section>
-</body>
+
+		<section>
+			<h3 id="Tidslinje"> 2.0 Tidslinje </h3>
+			<p>
+				Da vi skrev forprosjektrapporten lagde vi også en milepælsplan som viste når vi planla å arbeide med og være ferdig med de forskjellige delene websiden skulle inneholde. Vi opplevde det som vanskelig å sette et tidsperspektiv på hvor lang tid det ville ta å jobbe med de forskjellige delene fordi ingen av oss har jobbet med denne typen prosjekt før.
+			</p>
+			<p>
+				Her er milepælsplanen vår.<br>
+				<img src="./bilder/mileplan.png" title="Milepælsplan" alt="Milepælsplan">
+			</p>
+			<hr>
+			<h3 id="Uke1"> 2.1 Uke 1 28.10.13 - 03.10.13 </h3>
+			<p>
+				Første gang gruppa møttes var mandag 28.oktober. En kjapp hilserunde og en idémyldring senere hadde vi allerede fordelt de første oppgavene: <br>
+				- Peter fikk i oppgave å skrive første utkast til forprosjektrapporten ut i fra vår første idé. Utkastet skulle være klart til neste dag.
+			</p>
+			<p>
+				Vi møttes igjen onsdag 30.oktover og det var under dette møtet vi kasten idéen om sportsnettavis og peilet oss inn på å lage en hjemmeside for et idrettslag. Vi fikk samlet nye innspill og tanker til forprosjektrapporten.
+			</p>
+			<p>
+				Skissen ble lagt ut på Github og det var nå enkelt for alle å gå inn og gjøre endringer. Siste finpuss og validering av rapporten og kravspesifikasjonen ble gjort i løpet av dagen, og på kvelden la Magnus ut filene på sitt hjemmeområde. De andre la ut link til hans område på sine hjemmeområder.
+			</p>
+			<p>
+				Vi ønsket ikke å lage en side for et fiktivt lag og Peter tok derfor kontakt med fotballaget SBIO Athletics for å høre om de kunne tenke seg å være utgangspunkt for vårt prosjekt.
+			</p>
+			<p>
+				Allerede i løpet av onsdagen begynte det å komme på plass små deler til siden. Magnus opprettet det ytre rammeverket i index.php og Peter opprettet en tabell og en funksjon for å rullerende nyheter på hovedsiden vår.I tillegg kom det positivt svar fra fotballaget, de ville være med! Laget fikk tilsendt et skjema for å gi informasjon om hver spiller slik at vi kunne opprette profiler på hver enkelt.
+			</p>
+			<p> Gruppen hadde ikke mer tid til å møtes denne uka.</p>
+
+			<hr>
+
+			<h3 id="Uke2"> 2.2 Uke 2 04.11.13 - 10.11.13 </h3>
+			<h3 id="Andregruppemote"> 2.2.1 Andre gruppemøte 06.11.13 </h3>
+			<p>
+				Andre gruppemøte ble onsdag 6.november. Fra forrige møte hadde det blitt jobbet bra og flere sider var opprettet: <br>
+				- Underside for spillerprofiler <br>
+				- En underside for nyheter <br>
+				- PHP Include lagt inn i index.php
+			</p>
+			<div>
+				Ny arbeidsoppgaver ble delegert i dag: <br>
+				<ul>
+					<li> Magnus fortsetter med spillerprofil-siden. Har allerede begynt å få inn skjema fra spillerne </li>
+					<li> Mimi skal lage et kontakskjema som skal ligge på en underside. Meningen er at brukeren skal kunne ta kontakt med laget på generelt grunnlag og ikke måtte ta personlig kontakt med styret. Hun skal også sjekke opp hvordan det funker med søkefunksjon på siden</li>
+					<li> Tasmia skal opprette en mal slik at vi lett kan legge inn intervjuer, referater og lignende på nyhetsundersiden. Hun skal også legge inn "les mer"-knapp.</li>
+					<li> Peter skal lage en menylinje og jobbe med utformingen av hovedsiden (hjem.html). </li>
+				</ul>
+			</div>
+
+			<p>
+				Den universelle utformingen kom i fokus i dag og vi er enige om at html-strukturen skal være godt bygget opp. For slik vi oppfattet det på vår gjesteforeleser som var blind, var det viktig at oppbyggingen av siden var gjort ordentlig slik at det ble mulig for dem å navigere seg gjennom siden med sine hjelpeverktøy.<br>
+				<br>
+				Foreløpig klarer vi oss med å møtes en gang i uka, men dersom vi trenger hjelp/innspill tar vi fortløpende kontakt med de andre om å møtes.
+			</p>
+
+			<hr>
+
+			<h3 id="Github"> 2.2.2 Aktivitet på Github </h3>
+
+			<div>
+				Ut uka har det vært mye aktivitet på Github:
+				<ul>
+					<li> Script for knapper er lagt ut. </li>
+					<li> Spillerprofiler er lagt til. </li>
+					<li> Hovedmenylinjen er laget. </li>
+					<li> Et stil-ark er opprettet og linket til index.php. </li>
+					<li> Filen hjem.html som utgjør hovedsiden er laget. Script og CSS er inkludert i filen. </li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h3 id="OppUke2"> 2.2.3 Oppsummering av uka </h3>
+			<p>
+				En god uke der vi fikk på plass mye av den ytre strukturen på siden vår og vi fikk testet at inkluderingen av de forskjellige undersidene funket.
+			</p>
+			<p>
+				Vi har enda ikke bestemt oss for et tema for layout på siden, men vi er enige om at vi ser nærmere på dette neste uke når de forskjellige undersidene er oppe og går for fullt. Da er det lettere å få oversikt og kunne se for oss hvordan vi ønsker fargebruken skal være.
+			</p>
+			<p>
+				Tanken om å involere jentelaget til SBIO Athletics har vært oppe for diskusjon. Om jentelaget vil bidra vil det gi mer innhold og variasjon på siden. Det blir bestemt at vi tar kontakt med dem for å høre om det er noe de kunne tenke seg å være en del av.
+			</p>
+			<p>
+				Samtidig som vi jobber med oppgaven har alle sammen andre innleveringsoppgaver. Tiden går fort og vi ser at vi kanskje må stramme inn på tidsfristene vi setter til hverandre. Ting må på plass selv om kveldene blir lange. Plutselig er leveringsfristen her og hvem vet hvilke problemer som kan dukke opp på et senere tidspunkt.
+			</p>
+
+			<hr>
+
+			<h3 id="Uke3"> 2.3 Uke 3 11.11.13 - 17.11.13 </h3>
+			<h3 id="TreForste"> 2.3.1 Ukas tre første dager </h3>
+
+			<div>
+				I løpet av ukas tre første dager har flere ting begynt å falle på plass:
+				<ul>
+					<li> Hovedsiden med delvis CSS og script gir oss en viss pekepinn på hvordan layout´en vil se ut. </li>
+					<li> Menyen er blitt inkludert i index.php. </li>
+					<li> Stadig flere spillerprofiler blir klare. </li>
+					<li> Kontakskjemaet nesten klart. </li>
+				</ul>
+			</div>
+
+			<p>
+				Onsdag 13.november møttes vi for en oppsummering og fordeling av nye oppgaver. For å få mer spennende innhold på siden bestemmer vi oss for å lage et intervju til styreleder for SBIO Fotball og et intervju til en spiller. Tasmia påtar seg oppgaven å skrive intervjuene.
+			</p>
+			<p>
+				Mimi, som vår PHP-ekspert, skal inkludere alle undersider og kontaktskjema slik at dette ligger på sine plasser og fungerer slik vi ønsker.
+			</p>
+			<p>
+				Magnus jobber videre med profilene og tar en titt på problemet angående flyten av elementer på hovedsiden.
+			</p>
+			<p>
+				Peter begynner å skrive på prosjektrapporten og tar kontakt med laget og hører om det er flere som vil stille med informasjon til profiler. Han skal også få tak i informasjon om styret for å kunne legge dette ut på kontaktsiden.
+			</p>
+			<p>
+				Vi er samtidig oppmerksom på at easteregg-delen har falt litt utenfor. Alle blir bedt om å sette i gang sine kreative hjerneceller for å komme på et morsomt "påskeegg".
+			</p>
+
+			<hr>
+
+			<h3 id="Arbeidsokt"> 2.3.2 Første ordentlige arbeidsøkt sammen </h3>
+			<div>
+				Torsdag 14.november fikk vi det endelig til å klaffe, vi hadde vår første arbeidsøkt sammen på datatorget i P35. Vi startet med en liten idémyldring og oppsummering av hva som var gjort og hva som måtte prioriteres.
+				<ul>
+					<li> Alle undersidene ligger klar og ferdig kodet til utfylling av innhold. </li>
+					<li> Kontaktskjemaet er inkludert i undersiden "Kontakt". </li>
+					<li> Spillerprofiler er fullført. </li>
+					<li> Jentelaget svarer på henvendelsen og lagleder er positiv til idéen. Hun skal høre med resten av laget. </li>
+					<li> Intervjuene er ferdigskrevet og sendt ut. </li>
+				</ul>
+			</div>
+
+			<p>
+				Gjennom arbeidsøkten fikk vi inkludert og sjekket at alle undersidene funket som de skulle.<br>
+				Det finnes enkelte småproblemer utseendemessig på de forskjellige undersidene, men den personen som har jobbet med den siden det gjelder tar for seg problemet.<br>
+				Og i løpet av helga vil all CSS bli samlet i en fil.
+			</p>
+
+			<hr>
+
+			<h3 id="OppUke3"> 2.3.4 Oppsummering av uka </h3>
+			<p>
+				Denne uka fikk vi for første gang se hvordan websiden ville bli med alle undersider inkludert. Et godt steg i riktig retning. Vi ser at det fortsatt venter mye jobb, men gjengen er forberedet på at det blir en knallhard siste uke.
+			</p>
+			<p>
+				Vår første skikkelig arbeidsøkt sammen fungerte bra. Selv om vi har hatt god kommunikasjon og har møttes flere ganger i uken tidligere var det veldig OK å ha en slik type arbeidsøkt sammen.
+			</p>
+			<p>
+				Gjennom helga fikk vi samlet CSS´en i en fil og Runar fra SBIO leverte et glimrende intervju som vil "krydre" siden vår bra. I tillegg sendte han oss noen bilder som vi kan opprette et bildegalleri av.<br>
+			<br>
+				Neste møte er mandag.<br>
+			</p>
+			<p> Vi konkluderer i en god uke og et steg nærmere mål! </p>
+
+			<hr>
+
+			<h3 id="Uke4"> 2.4 Uke 4 18.11.13-24.11.13 </h3>
+			<h3 id="Finaleuka"> 2.4.1 "Finaleuka" i gang 18.11.13 </h3>
+			<div>
+				Møttes mandags morgen 18.november for å legge slagplanen for innspurten mot leveringsfrist.<br>
+				<br>
+				Hva må gjøres:
+				<ul>
+					<li> Intervju legges inn på nyheter. </li>
+					<li> Refresh-funksjon for å vise forskjellige innhold i et felt på forsiden. </li>
+					<li> Starte på et stil-ark nummer to med fokus på universell utforming. </li>
+					<li> Linker i vårt rullerende nyhetsvindu på forsiden. </li>
+					<li> Om sider ikke er validert må det sjekkes og godkjennes. </li>
+					<li> Fortsatt problem med flyten av elementer på hovedsiden.</li>
+					<li> Bakgrunnsbilde i header må redigeres. </li>
+				</ul>
+			</div>
+			<p>
+				Oppgavene tok vi på strak arm der vi satt. En tre timers arbeidsøkt gikk fort og vi fikk løst mange av småproblemene med hjelp av hverandre. Teamwork!<br>
+				Kontaktskjemaet fungerer og sender henvendelsen til mailadressen vi har lagt inn.<br>
+				Mer og mer CSS faller på plass og Tasmia har begynt arbeidet med stil-arket som har mer fokus på universell utforming.<br>
+			<br>
+				Mot slutten av uka må vi sette av tid til evaluering av arbeidsmetode, teknologier og hvordan arbeidet har fungert i gruppen.
+			</p>
+
+			<hr>
+
+			<h3 id="FemDager"> 2.4.2 Onsdag, fem dager igjen </h3>
+			<p>
+				Nest siste arbeidsøkt ble holdt i dag. Merker at gruppa har blitt bedre kjent siden starten, for nå sitter praten og humøret mye løsere!
+			</p>
+			<p>
+				Dagens gladnyhet var at jentelaget til SBIO Fotball vil bidra! Naomi Thayland som er leder for laget har lovet at informasjonen fra hver spiller skal komme i løpet av kvelden. Vi venter i spenning! Hun har også sagt ja til å stille opp på samme intervju som leder for guttelaget svarte på. Vi er kjempetakknemlige da vi synes disse intervjuene gjør siden vår mye mer innholdsrik.
+			</p>
+			<p>
+				Stil-ark nummer to begynner å ta form, samtidig som hoved-CSS blir bedre og bedre. <br>
+				Magnus løste problemet med plassering av elementene på hovedsiden og ordnet slik at elementene flyter vår vindus-størrelsen justeres.<br>
+				Mimi har oppdatert CSS rundt kontaktskjemaet og jobber nå med bildene m/link som skal rulle på hovedsiden. 3 av bildene ble ferdige under arbeidsøkten.<br>
+				Peter har skrevet ferdig rapporten så langt som det går, og har startet med å skrive den inn som HTML.
+			</p>
+			<div>
+				Før vi pakket sammen for dagen fordelte vi de gjenstående oppgavene til fredag:
+				<ul>
+					<li> Magnus går over CSS og sjekker at den stemmer. Når jenteprofilene kommer skal han legge dem inn på rett underside. I tillegg jobber han med refresh-funksjonen.</li>
+					<li> Mimi skal lage ferdig bildene til den rullerende seksjonen og lage til noen spillerprofilbildet som ser stilig ut. Det er disse bildene som skal dukke opp ved hjelp av refresh-funksjonen når man kommer inn på hovedsiden.</li>
+					<li> Tasmia skal gjøre ferdig stil-arket, og gir beskjed i løpet av torsdagen om hun er klar for flere oppgaver. Hun skal skrive inn intervjuet av Naomi når vi mottar det.</li>
+					<li> Peter skal lage en overskrift til tabellen og lage easter-egget. Skriver også inn informasjon om jentelaget på undersiden om dem. Må fikse problemet med hover-funksjonen i menylinjen. Sub-menyen viser selv når musa ikke "hover" over der den opprinnelig skal sette i gang funksjonen.</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h3 id="OnsKveld"> 2.4.3 Oppdatering onsdag kveld </h3>
+			<p>
+				I løpet av kvelden fikk Magnus rettet PHP-feilmeldingen ved bruk av isset(). Vi har visst om feilen, men glemt å notere oss den i rapporten tidligere. Han har laget refresh-funksjonen og den ser ut til å virka akkirat som vi har tenkt!
+			</p>
+			<p>
+				Peter har laget et forslag til easter-egg. Hva som skal brukes diskuteres fredag. Sitter muligens med en idé om å legge inn et easter-egg nummer to.
+			</p>
+			<p>
+				Vi har mottatt spillerprofilene fra jentelaget og beskjed om at intervjuet av Naomi kommer torsdag.
+			</p>
+
+			<hr>
+
+			<h3 id="Torsdag"> 2.4.4 Torsdag </h3>
+			<p>
+				Alle jobber individuelt i dag og gjør klart alt til fredag.<br>
+				I løpet av morgenen har Peter rettet feilen i menylinjen og rapporten begynner å ta form i HTML. I tillegg har undersiden til damelaget fått innhold og en tabell.
+			</p>
+			<div>
+				Noen CSS-problemer kan sees på siden:
+				<ul>
+					<li> Footer og header har forskjellig bredde i forhold til "rammen". Må justeres.</li>
+					<li> Skal mellomrommet mellom header - "ramme" og "ramme" - footer justeres? Kan det se bedre ut uten noe mellomrom?</li>
+					<li> Mellomrom mellom toppen av vinduet og header.</li>
+					<li> Tabellen må få annen farge.</li>
+					<li> Sjekke høyden på "ramme".</li>
+					</ul>
+					<br>
+					Andre gjøremål:
+					<ul>
+					<li> Intervju av lagleder må få en ingress.</li>
+					<li> Kampreferat fra guttelaget må legges inn.</li>
+					<li> Bildegalleri under media må opprettes.</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h3 id="Siste">2.4.5 Siste møte </h3>
+			<div>
+				Der er blitt 22.november og få dager igjen til innleveringsfrist.I dag møttes vi på datatorget for siste gang for å gjøre siste finish:
+				<ul>
+					<li> Layout og flyten på gutteprofil-siden ble ordnet.</li>
+					<li> Jenteprofilene ble lagt inn og fungerte som de skal.</li>
+					<li> Kampreferatet fra guttematchen ble lagt inn under nyheter.</li>
+					<li> Alle sidene ble rettet og validert. De er nå godkjent.</li>
+					<li> Navn og bilde av laglederne og styreleder ble lagt inn på kontakt-undersiden.</li>
+				</ul>
+			</div>
+
+			<div>
+				Vi fikk ikke gjort absolutt alt vi skulle før folk måtte dra, så de små gjenstående oppgavene fordelte vi:
+				<ul>
+					<li> Magnus ser over CSS´en og skifter stil på tabellene til noe som ser bedre ut.</li>
+					<li> Mimi skal gjøre ferdig spillerprofilbilder som skal ligge i refresg-funksjonen på hovedsiden.</li>
+					<li> Tasmia skal legge inn de to siste intervjuene når vi får dem tilsendt i løpet av kvelden eller lørdag.</li>
+					<li> Peter tar en siste titt på easter-egget og fullfører prosjektrapporten.</li>
+				</ul>
+				Disse oppgavene skal hver enkelt jobbe med hjemme og gjøre ferdig i løpet av lørdag. Greit å ha en dag buffer i tilfelle noe teknisk skjærer seg når det skal leveres inn.<br>
+				<br>
+				Som siste felles oppgave tok vi en evaluering av metodebruk, verktøy og teknologier, og reflekterte rundt gjennomføringen av prosjektet.
+			</div>
+
+			<hr>
+
+			<h3 id="OppUke4">2.4.6 Oppsummering av uka </h3>
+			<p>
+				Siste uka gikk utrolig fort! Det føltes som tiden ikke kom til å strekke til, men etter hvert som bitene falt på plass én etter én skjønte vi at det kom til å gå bra. Det var en lettelse å endelig se en webside som fungerte med alle de delene vi har laget hver for oss.<br>
+				<br>
+				Det at vi fikk tre arbeidsøkter i lag gjorde susen. Vi hadde godt utbytte av dem og kom frem til de tingene vi lurte på eller va usikre på.<br>
+				<br>
+				Selv om ikke alt falt fullstendig på plass da vi møttes for siste gang på fredag føler vi oss trygge på at de små bitene som gjenstår blir ferdigstilt i løpet av lørdagen. De største filene er lastet opp på hjemmeområdet til Magnus, så det er kun små endringer som må legges inn.<br>
+				<br>
+				Søndags ettermiddag var de aller siste bildene og endringene på plass! <br>
+				<br>
+				God innsats gjennom "finaleuka" og det er en gjeng som er spent på tilbakemeldinger på produktet!
+			</p>
+		</section>
+
+		<br>
+
+		<section>
+			<h3 id="Imple"> 3.0 Implementeringsoversikt </h3>
+			<div>
+				Da vi skrev forprosjektrapporten lagde vi en Use case - en liste over hva brukeren kunne gjøre på siden. Her kommer en gjennomgang av hva vi endte opp med å implementere på siden vår sett i sammenheng med forprosjektrapporten.
+				<ul>
+					<li>Klikke seg inn på spillerprofiler<br>
+						Dette har vi lagt inn. Vi hadde egentlig bare tenkt å ha et lag og et sett med profiler, men når vi fikk med jentelaget ble det to sider med profiler. Du får oppgitt litt informasjon om hver spiller samtidig som bildet som tilhører spilleren forstørrer seg når du klikker på "les mer"-knappen.</li>
+					<li>Lese historien bak klubben.<br>
+						Det er laget to undersider som forteller kort om de tre forskjellige lagene SBIO Fotball består av. En side for herrer og en for damer.</li>
+					<li>Se bilder/video/media.<br>
+						Dette har blitt en media-underside. Her har vi nok tenkt oss mer ennhold enn vi klarte å få tak i. Siden består av et enkelt bildegalleri med 9-12 bilder.</li>
+					<li>Kontaktinformasjon/Styreinformasjon<br>
+						En underside med kontaktskjema som er knyttet til en mailadresse ble laget. På denne undersiden la vi også inn informasjon om hvem som er styreleder og hvem som er lagledere for de tre lagene.</li>
+					<li>Intervju og artikler<br>
+						En underside vi har kalt for "nyheter" inneholder tre intervjuer og et kampreferat fra en av kampene til guttelaget. Her så vi nok for oss enda noen saker å legge til.</li>
+					<li>Easter Egg.<br>
+						I løpet av siste uka klarte vi å lage et tredelt Easter Egg.</li>
+					<li>Søkemotor.<br>
+						En ting som ikke ble med i lista på forprosjektrapporten var en søkemotor. Vi ønsket at det skulle være mulig å søke gjennom alt innhold på siden, men det viste seg at man måtte ha kunnskaper om databaser og det var det ingen av oss som hadde.</li>
+				</ul>
+			</div>
+		</section>
+		<br>
+		<section>
+			<h3 id="Evaluering">4.0 Evaluering </h3>
+			<p>
+				Siste gang vi møttes tok vi en prat rundt prosjektgjennomføringen og under følger en evaluering av metoder, verktøy og teknologier.
+			</p>
+
+			<hr>
+
+			<h3 id="Metoder">4.1 Metoder </h3>
+			<p>
+				Vi følte ikke at vi hadde brukt noen spesiell arbeidsmetode i dette prosjektet. I forprosjektrapporten nevnte vi prototyping som metode. Vi ville lage en fungerende side, et utkast, for så å prøve og feile oss fremover mot sluttproduktet. Sann sett har vi kanskje misforstått prototyping, det er mer et verktøy som kan inngå i en utviklingsmodell.<br>
+				Men setter vi en struktur på hvordan vi jobbet med prosjektet kan vi kalle det en slags prototype-jobbing.
+			</p>
+			<p>
+				Vi er ikke fornøyde med hvor lang tid vi brukte på å sette alle de forskjellige delene sammen til én helhet. Vi hadde lenge delferdige undersider og testet disse én og én om gangen helt frem til siste uka der vi endelig fikk skjøtt alle sidene sammen.
+			</p>
+
+			<hr>
+
+			<h3 id="Verktoy">4.2 Verktøy </h3>
+			<div>
+				<ul>
+					<li>Alle har brukt forskjellige tekst-editorer, men det har ikke gitt noen problemer siden alle disse fungerer på samme måte.</li>
+					<li>GitHub har vært supert å bruke til å holde seg oppdatert på de seneste endringene. Hadde noen i gruppen gjort endringer, slapp du selv å gå inn å gjøre de fordi dette ble lagret automatisk på egen maskin.</li>
+					<li>Microsoft Project ble brukt til å lage milepælsplanen. Ikke mye å si på det programmet siden det kun ble brukt til å fremstille et Gantt-diagram. Ga i det minste et oversiktlig diagram.</li>
+					<li>Facebook ble vårt kommunikasjonsmiddel når vi ikke møttes på skolen. Gjorde det lett å få kontakt med de andre, gruppevis eller personlig. Det ble også vårt nettverk mot kontaktpersonene i SBIO Fotball. Facebook gjorde det lett å sende filer og ha korte samtaler.</li>
+					<li>Vi opprettet en mailadresse som vi fikk tilsendt spillerprofiler til og som vi knyttet opp mot kontaktskjemaet som ble laget under kontakt-undersiden.Mail er praktisk.</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h3 id="Teknologier">4.3 Teknologier</h3>
+			<div>
+				<ul>
+					<li>Nettverk/PHP var det vi opplevde som det mest tungvinte. Ingen av oss hadde kunnskaper eller følte vi hadde tid til å lære oss å sette opp/innstallere OHO for å få testet om sidene funket med PHP Include. For hver gang vi skulle teste endringer på siden måtte vi være pålogget skolenettverket. Det gjorde det tungt for oss da vi hele tiden måtte kopiere filene over til vårt hjemmeområde, for så å bruke nettadressen til vårt hjemmeområde.</li>
+					<li>JQuery/Javascript har vi fått til som vi planla å bruke. Det har vært en positiv ting å jobbe med, det har vært gøy å se de forskjellige funksjonene funke slik vi ønsket.</li>
+					<li>HTML og CSS har vært greit å jobbe med siden det er disse to teknologiene vi har hatt fokus på i Webprosjekt gjennom dette semesteret. Ingen store overraskelser, men vi har fått brynet oss på en del CSS for å få elementer til å ligge der vi ville ha dem.</li>
+				</ul>
+			</div>
+
+			<hr>
+
+			<h3 id="Tidsbruk">4.4 Hva fungerte og tidsbruk </h3>
+			<p>
+				Det som tok aller mest tid for vår del var CSS´en. Det tok tid å klare å plassere elementene og skjønne seg på hva som gjorde at ting ikke ville legge seg dit vi ville.<br>
+				Stilark nummer 2 med fokus på universell utforming tok også en del tid. Det å få en god forståelse om universell utforming og hva dette innbærer. Vi har vært nøyaktige med oppbyggingsstrukturen til sidene for å holde den så ren og ryddig som mulig. Det er det som er blitt vårt hovedfokus med tanke på utformingen. Fargebruk og layout på stilark nummer 2 er tenkt å være enklere å se for folk som f.eks. har dårligere syn enn normalt.<br>
+				<br>
+				Vi har ikke noe spesielt vi følte ikke fungerte utenom at det var tungvint med testing av siden underveis pga PHP.
+			</p>
+
+			<hr>
+
+			<h3 id="Kilder">4.5 Kilder </h3>
+			<div>
+				<ul>
+					<li> <a href="http://www.w3schools.com/"> W3Schools </a> </li>
+					<li> <a href="http://www.designmodo.com.com"> Designmodo </a> </li>
+					<li> <a href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/Universell+utforming+av+innhold+p%C3%A5%20nett"> innsida - NTNU </a> </li>
+					<li> Runar Alvseike, Naomi Thayalan og Bjørnar Gjerde i SBIO FOtball </li>
+				</ul>
+			</div>
+		</section>
+		<br>
+		<section>
+			<h3 id="Refleksjon"> Refleksjon rundt prosjektgjennomføringen</h3>
+			<p>
+				Den største utfordringen var å samle informasjon å bruke. Det meste av info gikk gjennom Peter siden det var han som kjente de personene vi fikk tilsendt fra.<br>
+				Dette ble en flaskehals og ga for mye jobb til en person.Informasjonen vi har brukt er fra private personer og derfor ble det slik.
+			</p>
+			<p>
+				Selv om vi kun hadde 6 rene arbeidsøkter sammen synes vi at dette har holdt. Vi har vært flinke å gjort de oppgavene vi skulle til hver gang vi møttes og for å holde fremgangen gående. De 6 øktene har vært veldig bra og vi brukte dem godt.
+			</p>
+			<p>
+				Vi hadde ingen krangler eller store diskusjoner, alt har omtrent gått på skinner. De små diskusjonene vi har hatt har løst seg kjapt og vi ble enige om løsninger gjennom at hver person fikk komme med sine synspunkter, for så å vurdere det beste forslaget.
+			</p>
+			<p>
+				Vi er fornøyd med sluttproduktet vårt! Websiden ble som vi hadde tenkt og forestilt oss fra starten. Vi har levert det vi skrev i kravspesifikasjonen og enda litt mer med tanke på at vi fikk med oss hele SBIO Fotball.
+			</p>
+			<p>
+				Ved prosjekstart var det en gruppe som var spent med tanke på at ingen kjente hverandre fra før. Vi synes vi har fått til et bra samarbeid den perioden prosjektet har pågått!<br>
+				<br>
+				Takk for innsatsen alle sammen!
+			</p>
+		</section>
+	</body>
 </html>
-
-
-
-
-
-
-
