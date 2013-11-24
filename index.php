@@ -10,8 +10,8 @@ else
 	<head>
 		<title>Hjemmeside</title>
 		<meta charset="utf-8">
-		<link rel="stylesheet" type="text/css" title="styleen" href="./style.css">
-		<link rel="alternate stylesheet" type="text/css" title="styletre" href="./uni.css">
+		<link rel="stylesheet" type="text/css" title="style" href="./style.css">
+		<link rel="alternate stylesheet" type="text/css" title="altstyle" href="./uni.css">
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js">
 		</script>
 		<script src="./script.js">
@@ -21,7 +21,7 @@ else
 
 	<body>
 		<header id="header">
-			<img id="header_bilde" src="sbioheader.jpg" alt="Logo" title="Logo">
+			<img id="header_bilde" src="./bilder/sbioheader.jpg" alt="Logo" title="Logo">
 			<nav>
 				<ul id="meny">
 					<li> <a href="index.php?page=hjem"> Hjem </a> </li>
@@ -40,7 +40,7 @@ else
 					</ul>
 					</li>
 
-					<li> <a href="index.php?page=media"> Media </a></li>
+					<li> <a href="index.php?page=media"> Bilder </a></li>
 
 					<li> <a href="index.php?page=nyheter"> Nyheter </a></li>
 
