@@ -7,20 +7,29 @@ setInterval(function(){ rulle()}, 5000);
 
 $(document).ready(function(){
 	/*kode for profilvindu*/
-	$( "#profil" ).load( "./profilbilder.html .profilbilder",function(){
-		$("#profil > img").toggle();
+	$( "#profil" ).load( "./profiler.html .spiller",function(){
+		$("#profil > .spiller").toggle();
 		var ant = $("#profil").children().length;
 		var nummer = 1 + Math.floor(Math.random() * ant);
-		var nr = "#profil img:nth-child(" + nummer + ")";
+		var nr = "#profil .spiller:nth-child(" + nummer + ")";
 		$(nr).toggle(0, function(){
-			$("#profil > img").css({
+			$("button").remove();
+			$(".spiller > article").css({
+				"width":"170px",
+				"float":"right",
+				"margin-right":"1px",
+				"height":"170px",
+				"color":"black"
+			});
+			$(".spiller > img").css({
 				"height":"auto",
-				"max-width":"340px",
-				"max-height":"198px",
+				"max-width":"170px",
+				"max-height":"170px",
 				"float":"left",
 				"margin-left":"1px",
 				"margin-right":"auto"
 			});
+			$(".spiller > h3").css({ "margin":"1px", "color":"black" });
 		});
 	});
 
@@ -64,7 +73,7 @@ $(document).ready(function(){
 		});
 	};
 
-	/*Sript for Easteregg */
+	 /*Sript for Easteregg */
 	teller="0";
 	$("#header_bilde").mouseover(function(){
 		teller++;
@@ -72,11 +81,10 @@ $(document).ready(function(){
 		if(teller == 9)
 		{
 			$("#ramme").css("background-color","blue");
-			/*$('body').css('background-image','url("bakgrunntexture.jpg")');*/
 		}
 		if(teller == 15)
 		{
-			alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og Ã¸nsker dere lykke til neste sesong! :-)");
+			alert("Gruppe 41 vil takke alle spillerne fra SBIO Fotball for bidragene, og ÃƒÂ¸nsker dere lykke til neste sesong! :-)");
 		}
 	});
 });//end of ready(function)
